@@ -244,5 +244,11 @@ function updateStatus(msg) {
 }
 
 window.onload = () => {
-  loadLesson("data/senior_high_2_up_lesson1.json");
+  // 自動取得畫面上選單目前選中的檔案路徑
+  const selectElement = document.getElementById("lessonSelect");
+  if (selectElement && selectElement.value) {
+    loadLesson(selectElement.value);
+  } else {
+    loadLesson("data/lesson1.json"); // 預備預設值
+  }
 };
