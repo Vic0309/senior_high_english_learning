@@ -244,5 +244,5 @@ function updateStatus(msg) {
 }
 
 window.onload = () => {
-  loadLesson("data/lesson1.json");
+  loadLesson("data/senior_high_2_up_lesson1.json");
 };
