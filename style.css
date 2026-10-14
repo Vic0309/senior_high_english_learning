@@ -1,0 +1,151 @@
+/* 基本設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.lesson-selector {
+  font-size: 1.1rem;
+}
+
+.lesson-selector select {
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #fff;
+}
+
+/* 播放控制區（車用大按鈕，置頂設計方便開車操作） */
+.player-controls {
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.status-bar {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2563eb;
+  margin-bottom: 12px;
+  min-height: 1.6em;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 14px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary { background-color: #2563eb; color: white; }
+.btn-warning { background-color: #f59e0b; color: white; }
+.btn-success { background-color: #10b981; color: white; }
+.btn-danger  { background-color: #ef4444; color: white; }
+
+/* 表格容器與樣式 */
+.table-container {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* 目前正在朗讀的單字列高亮特效 */
+.active-row {
+  background-color: #e0f2fe !important;
+  border-left: 5px solid #0284c7;
+}
+
+tr:hover {
+  background-color: #f8fafc;
+  cursor: pointer;
+}
+
+/* 句型卡片區 */
+.grammar-section {
+  margin-top: 30px;
+}
+
+.grammar-card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.grammar-card h3 {
+  color: #1d4ed8;
+  margin-bottom: 8px;
+}
+
+/* 手機版直立螢幕微調 */
+@media (max-width: 768px) {
+  body { padding: 10px; }
+  h1 { font-size: 1.4rem; }
+  .btn { min-width: 45%; font-size: 1rem; padding: 12px 6px; }
+  th, td { padding: 10px; font-size: 0.9rem; }
+}
