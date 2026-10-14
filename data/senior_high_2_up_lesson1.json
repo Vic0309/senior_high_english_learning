@@ -1,0 +1,367 @@
+{
+  "lesson_id": "B1L1",
+  "lesson_title": "Senior High English Book 1 Lesson 1",
+  "words": [
+    {
+      "id": "w1",
+      "word": "humankind",
+      "pos": "n. [U]",
+      "kk": "[ˈhjumənˌkaɪnd]",
+      "definition_en": "the human race; human beings collectively.",
+      "definition_tw": "人類",
+      "synonyms": ["humanity (n. [U])"],
+      "collocations": [],
+      "sentence_en": "Prometheus felt deep sympathy for humankind and decided to help them.",
+      "sentence_tw": "普羅米修斯對人類感到深深的同情，決定幫助他們。",
+      "analysis": "與 humanity 階為不可數名詞，指全體人類。常用於探討人類歷史、文明或與大自然相對立的語境。",
+      "timing": "撰寫作文論述人類文明發展、大自然保護或科技對人類的影響時使用。"
+    },
+    {
+      "id": "w2",
+      "word": "universe",
+      "pos": "n. sing.",
+      "kk": "[ˈjunəˌvɝs]",
+      "definition_en": "all existing matter and space considered as a whole; the cosmos.",
+      "definition_tw": "宇宙",
+      "synonyms": [],
+      "collocations": ["in the universe（在宇宙之中）"],
+      "related_words": ["universal (adj.) 普遍的"],
+      "sentence_en": "Earth is just a small planet in the universe.",
+      "sentence_tw": "地球只是宇宙中的一顆小行星。",
+      "analysis": "指整個宇宙，通常前面會加定冠詞 the。衍生形容詞 universal 表示「普遍的、萬能的」。",
+      "timing": "討論天文、科學，或是描述某種道理/規律是「放諸四海皆準」時。"
+    },
+    {
+      "id": "w3",
+      "word": "fur",
+      "pos": "n. [U]",
+      "kk": "[fɝ]",
+      "definition_en": "the short, fine, soft hair of certain animals.",
+      "definition_tw": "（動物的）毛皮",
+      "synonyms": [],
+      "collocations": ["fake fur（人造毛皮）"],
+      "sentence_en": "Animals with thick fur can survive in freezing cold winters.",
+      "sentence_tw": "擁有厚實毛皮的動物能在嚴寒的冬天生存。",
+      "analysis": "不可數名詞，指軟毛皮。若要表達環保或人造材質，常搭配 fake fur 或 artificial fur。",
+      "timing": "描述動物特徵、冬天禦寒衣物或動物權益議題時。"
+    },
+    {
+      "id": "w4",
+      "word": "enable",
+      "pos": "vt.",
+      "kk": "[ɪˈnebl]",
+      "definition_en": "to give (someone) the authority or means to do something; make it possible for.",
+      "definition_tw": "使……能夠……",
+      "patterns": ["enable sb. to + V（使某人能夠做某事）"],
+      "sentence_en": "The internet enables people to communicate instantly around the world.",
+      "sentence_tw": "網際網路使人們能夠與全世界即時溝通。",
+      "analysis": "核心用法為 enable + 受詞 + to V，強調「提供條件、能力或資源」讓某人可以完成某事。",
+      "timing": "說明某種工具、技術、環境或行為帶來的正面賦能或便利時。"
+    },
+    {
+      "id": "w5",
+      "word": "upright",
+      "pos": "adj. / adv.",
+      "kk": "[ˈʌpˌraɪt]",
+      "definition_en": "in or into a vertical position; sitting or standing straight up.",
+      "definition_tw": "直立的 / 直立地",
+      "collocations": ["sit upright（直立坐著）", "upright position（直立位置）"],
+      "sentence_en": "Prometheus gave humans the ability to stand upright.",
+      "sentence_tw": "普羅米修斯給予了人類直立站立的能力。",
+      "analysis": "可作形容詞或副詞。常用於描述人的坐姿、站姿或物體的垂直放置方式。",
+      "timing": "描述姿勢、體態，或比喻為人正直（upright citizen）時。"
+    },
+    {
+      "id": "w6",
+      "word": "generous",
+      "pos": "adj.",
+      "kk": "[ˈdʒɛnərəs]",
+      "definition_en": "showing a readiness to give more of something, especially money, than is strictly necessary.",
+      "definition_tw": "慷慨的",
+      "patterns": ["It is generous of sb. to + V（某人做某事真慷慨）"],
+      "related_words": ["generosity (n. [U]) 慷慨（show generosity to sb.）"],
+      "sentence_en": "It was very generous of him to share his resources with others.",
+      "sentence_tw": "他與他人分享資源真是太慷慨了。",
+      "analysis": "描述人的特質為大方、不吝嗇。形容人格特質時，句型常用 It is generous of sb. to V。",
+      "timing": "稱讚他人大方付出、捐款或協助時使用。"
+    },
+    {
+      "id": "w7",
+      "word": "conflict",
+      "pos": "n. [C, U] / vi.",
+      "kk": "[ˈkɑnflɪkt]",
+      "definition_en": "a serious disagreement or argument; to be incompatible.",
+      "definition_tw": "衝突；抵觸",
+      "collocations": ["come into conflict with（與……發生衝突）", "conflict with（與……抵觸）"],
+      "phrases": ["conflict of interest（利益衝突）"],
+      "sentence_en": "His personal goals came into conflict with his company's policies.",
+      "sentence_tw": "他的個人目標與公司的政策產生了衝突。",
+      "analysis": "作名詞重音在第一音節 [ˈkɑnflɪkt]，作動詞重音在第二音節 [kənˈflɪkt]。 conflict with 表意見、時間或利益抵觸。",
+      "timing": "討論爭執、人際問題、時間衝突或利益衝突時。"
+    },
+    {
+      "id": "w8",
+      "word": "distribution",
+      "pos": "n. [U]",
+      "kk": "[ˌdɪstrəˈbjuʃən]",
+      "definition_en": "the action of sharing something out among a number of recipients.",
+      "definition_tw": "分配；分布",
+      "related_words": ["distribute (vt.) 分發；分配（be distributed to...）"],
+      "sentence_en": "The distribution of resources among the regions was unfair.",
+      "sentence_tw": "資源在各區域之間的分配是不公平的。",
+      "analysis": "動詞為 distribute。可指物品/食物的分發，也可指人口、物種在地理上的地理分布。",
+      "timing": "探討資源配置、物流、社會公平或數據分布時。"
+    },
+    {
+      "id": "w9",
+      "word": "benefit",
+      "pos": "n. [C, U] / vt. / vi.",
+      "kk": "[ˈbɛnəfɪt]",
+      "definition_en": "an advantage or profit gained from something; receive an advantage.",
+      "definition_tw": "益處；對……有益；得益於",
+      "collocations": ["be of great benefit to sb.（對某人很有幫助）", "benefit from（得益於……）"],
+      "related_words": ["beneficial (adj.) 有利/有幫助的"],
+      "sentence_en": "Regular exercise will be of great benefit to your health.",
+      "sentence_tw": "定期運動對你的健康非常有益。",
+      "analysis": "作動詞時，S benefit from... 表「主詞從……獲益」；A benefit B 表「A 對 B 有好處」。",
+      "timing": "作文撰寫優缺點分析（pros and cons）或說明政策/習慣好處時。"
+    },
+    {
+      "id": "w10",
+      "word": "slaughter",
+      "pos": "vt. / n. [U]",
+      "kk": "[ˈslɔtɚ]",
+      "definition_en": "to kill (animals) for food, or kill (people) in large numbers violently.",
+      "definition_tw": "宰殺；屠殺",
+      "sentence_en": "The cattle were raised and sent to the farm to be slaughtered.",
+      "sentence_tw": "這些家畜被飼養並送到農場宰殺。",
+      "analysis": "既可指商業上的屠宰家畜，也可指戰爭或殘暴事件中的大規模屠殺。",
+      "timing": "討論畜牧、動物權益或歷史戰爭事件時。"
+    },
+    {
+      "id": "w11",
+      "word": "underneath",
+      "pos": "prep.",
+      "kk": "[ˌʌndɚˈniθ]",
+      "definition_en": "directly under or beneath something.",
+      "definition_tw": "在……下面",
+      "sentence_en": "She found her missing keys underneath the couch.",
+      "sentence_tw": "她在沙發底下找到了遺失的鑰匙。",
+      "analysis": "介系詞，比 under 更強烈地表達「被蓋住、在緊貼下方」的概念，有時用於比喻「在表面之下/內心深處」。",
+      "timing": "描述空間位置或探討人隱藏的真實內心時。"
+    },
+    {
+      "id": "w12",
+      "word": "freeze",
+      "pos": "vi. / vt.",
+      "kk": "[friz]",
+      "definition_en": "turn into ice or another solid as a result of extreme cold.",
+      "definition_tw": "受凍；凍結 (freeze - froze - frozen)",
+      "collocations": ["freeze to death（凍死）"],
+      "sentence_en": "Without fire, early humans would freeze to death in winter.",
+      "sentence_tw": "沒有火，早期的人類在冬天會凍死。",
+      "analysis": "三態為 freeze-froze-frozen。 freeze to death 指凍死。也可指電腦畫面凍結、或驚嚇時僵住（freeze up）。",
+      "timing": "描述極端天氣、寒冷環境或生動表情姿態時。"
+    },
+    {
+      "id": "w13",
+      "word": "victim",
+      "pos": "n. [C]",
+      "kk": "[ˈvɪktɪm]",
+      "definition_en": "a person harmed, injured, or killed as a result of a crime, accident, or other event.",
+      "definition_tw": "受害者；罹難者",
+      "collocations": ["fall victim to...（成為……的受害者）"],
+      "sentence_en": "Humans often fell victim to wild beasts before they had fire and weapons.",
+      "sentence_tw": "在擁有火和武器之前，人類經常成為野獸的受害者。",
+      "analysis": "fall victim to 是極常見的高中片語，後面接犯罪、疾病、災難或詐騙事件。",
+      "timing": "討論社會新聞、天然災害、詐騙或疾病防範時。"
+    },
+    {
+      "id": "w14",
+      "word": "miserable",
+      "pos": "adj.",
+      "kk": "[ˈmɪzrəbl]",
+      "definition_en": "wretchedly unhappy or uncomfortable.",
+      "definition_tw": "悲慘的",
+      "related_words": ["misery (n. [U, C]) 慘況；痛苦"],
+      "sentence_en": "Living in extreme cold without basic food made their lives miserable.",
+      "sentence_tw": "生活在極寒之中且缺乏基本食物使他們的生活非常悲慘。",
+      "analysis": "形容極度痛苦、淒慘的生活或心情，感情色彩遠比 sad 強烈。",
+      "timing": "描寫災民生活困境、不幸遭遇或極糟糕的天氣/心情時。"
+    },
+    {
+      "id": "w15",
+      "word": "hollow",
+      "pos": "adj.",
+      "kk": "[ˈhɑlo]",
+      "definition_en": "having a hole or empty space inside.",
+      "definition_tw": "中空的",
+      "sentence_en": "Prometheus hid the stolen fire inside a hollow stalk.",
+      "sentence_tw": "普羅米修斯將偷來的火種藏在一根中空的植物莖幹中。",
+      "analysis": "實體指「內部空的」（如樹幹、竹子）；比喻指「虛偽的、空洞的」（hollow victory 虛假的勝利，hollow promise 空頭支票）。",
+      "timing": "描述物理結構（竹子/管狀物）或比喻言行缺乏誠意時。"
+    },
+    {
+      "id": "w16",
+      "word": "furious",
+      "pos": "adj.",
+      "kk": "[ˈfjʊriəs]",
+      "definition_en": "extremely angry.",
+      "definition_tw": "暴怒的",
+      "collocations": ["be furious at/about sth.（對某事感到暴怒）", "be furious with sb.（對某人感到暴怒）"],
+      "related_words": ["fury (n. [U]) 狂怒"],
+      "sentence_en": "Zeus was furious about Prometheus's theft of fire.",
+      "sentence_tw": "宙斯對普羅米修斯盜取火種一事感到非常暴怒。",
+      "analysis": "程度遠高於 angry。情緒極度高漲憤怒。對事情用 at/about，對人用 with。",
+      "timing": "作文中用來替代 angry，加強語氣表達極度震怒的情緒。"
+    },
+    {
+      "id": "w17",
+      "word": "theft",
+      "pos": "n. [C, U]",
+      "kk": "[θɛft]",
+      "definition_en": "the action or crime of stealing.",
+      "definition_tw": "偷竊；偷竊罪",
+      "phrases": ["identity theft（身分盜用）"],
+      "comparison": "thief (n.) 小偷",
+      "sentence_en": "The theft of intellectual property is a serious legal issue.",
+      "sentence_tw": "智慧財產權的偷竊行為是嚴重的法律問題。",
+      "analysis": "theft 是名詞「偷竊行為/罪名」，而 thief 是指執行偷竊的人（小偷）。",
+      "timing": "討論法律、網路犯罪或社會治安相關議題時。"
+    },
+    {
+      "id": "w18",
+      "word": "punish",
+      "pos": "vt.",
+      "kk": "[ˈpʌnɪʃ]",
+      "definition_en": "inflict a penalty or sanction on (someone) for a fault or crime.",
+      "definition_tw": "懲罰",
+      "related_words": ["punishment (n. [C, U]) 懲罰"],
+      "sentence_en": "Zeus decided to punish Prometheus by chaining him to a mountain.",
+      "sentence_tw": "宙斯決定懲罰普羅米修斯，將他鎖在山崖上。",
+      "analysis": "常用於 punish sb. for sth.（因某事懲罰某人）。",
+      "timing": "討論教育、法律處分或神話道德報應時。"
+    },
+    {
+      "id": "w19",
+      "word": "banish",
+      "pos": "vt.",
+      "kk": "[ˈbænɪʃ]",
+      "definition_en": "send (someone) away from a country or place as an official punishment.",
+      "definition_tw": "放逐；驅逐",
+      "collocations": ["be banished to...（被放逐到……）"],
+      "related_words": ["banishment (n. [U]) 放逐"],
+      "sentence_en": "The traitor was banished from the kingdom forever.",
+      "sentence_tw": "這個叛徒被永遠放逐出該王國。",
+      "analysis": "強烈語氣的驅逐，常伴隨政治、歷史或神話色彩。也可比喻消除疑慮（banish fear）。",
+      "timing": "描寫歷史故事、神話奇幻文學或驅逐負面情緒時。"
+    },
+    {
+      "id": "w20",
+      "word": "torture",
+      "pos": "vt. / n. [C, U]",
+      "kk": "[ˈtɔrtʃɚ]",
+      "definition_en": "the action or practice of inflicting severe pain on someone.",
+      "definition_tw": "折磨；拷問",
+      "sentence_en": "Enduring the relentless heat every day was pure torture for him.",
+      "sentence_tw": "每天忍受酷熱對他來說純粹是折磨。",
+      "analysis": "既指肉體上的酷刑拷問，也指心理上的煎熬或痛苦折磨。",
+      "timing": "描述嚴酷的身體/精神煎熬，或批判非人道行為時。"
+    },
+    {
+      "id": "w21",
+      "word": "civilization",
+      "pos": "n. [U, C]",
+      "kk": "[ˌsɪvəlɪˈzeʃən]",
+      "definition_en": "the stage of human social and cultural development and organization that is considered most advanced.",
+      "definition_tw": "文明",
+      "sentence_en": "The discovery of fire set the stage for human civilization.",
+      "sentence_tw": "火的發現為人類文明奠定了基礎。",
+      "analysis": "指社會發展到高級階段的文明體系。動詞為 civilize（使文明/教化）。",
+      "timing": "歷史、社會學或探討科技對人類文明演進時。"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "p1",
+      "phrase": "run out (of...)",
+      "definition_tw": "用完；耗盡",
+      "sentence_en": "By the time he got to human beings, he had run out of gifts.",
+      "sentence_tw": "當他來到人類面前時，他的禮物已經用光了。",
+      "analysis": "人 run out of物（某人用光某物）；物 run out（某物用完了）。"
+    },
+    {
+      "id": "p2",
+      "phrase": "make up for",
+      "definition_tw": "彌補；補償",
+      "sentence_en": "To make up for their weaker state, Prometheus gave them fire.",
+      "sentence_tw": "為了彌補人類較為弱小的狀態，普羅米修斯給了他們火。",
+      "analysis": "同義詞為 compensate for。常用於彌補缺失、損失或時間。"
+    },
+    {
+      "id": "p3",
+      "phrase": "as a result",
+      "definition_tw": "因此；結果",
+      "sentence_en": "As a result, from that day on, humans would keep the meat for themselves.",
+      "sentence_tw": "因此，從那天起，人類就把肉留給自己。",
+      "analysis": "轉承詞，放在句首引導結果。同義詞為 therefore, consequently。"
+    },
+    {
+      "id": "p4",
+      "phrase": "fall victim to",
+      "definition_tw": "成為……的受害者；受到……的傷害",
+      "sentence_en": "Humans often fell victim to wild beasts.",
+      "sentence_tw": "人類過去經常成為野獸的受害對象。",
+      "analysis": "常接野獸、疾病、詐騙或天然災害。"
+    },
+    {
+      "id": "p5",
+      "phrase": "feed on",
+      "definition_tw": "靠……為食",
+      "sentence_en": "An eagle fed on Prometheus's liver every day.",
+      "sentence_tw": "一隻老鷹每天以普羅米修斯的肝臟為食。",
+      "analysis": "主詞通常為動物或昆蟲，表示以某種食物為主食。"
+    },
+    {
+      "id": "p6",
+      "phrase": "set the stage for",
+      "definition_tw": "為……奠定基礎 / 做好準備",
+      "sentence_en": "The gift of fire set the stage for human civilization.",
+      "sentence_tw": "火的禮物為人類文明奠定了基礎。",
+      "analysis": "比喻為未來的事件、發展或變革鋪路或準備好舞台。"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "g1",
+      "title": "句型 1：Not only ... but also ...（不僅……而且……）",
+      "structure": "Not only A but also B ...",
+      "explanation": "對等連接詞片語，用來連接兩個詞性、結構相同的單字、片語或子句。當連接兩個名詞作為句子的主詞時，動詞的單複數須與鄰近的後者主詞一致 (B)。語意上通常更強調 but also 後面帶出的新訊息。",
+      "sentence_en": "Prometheus gave humans not only the ability to stand upright but also the gift of fire.",
+      "sentence_tw": "普羅米修斯不僅給予人類直立站立的能力，還給予了火的禮物。",
+      "practice": [
+        {
+          "original": "Jessie is an outstanding artist. She is also a promising athlete.",
+          "combined": "Jessie is not only an outstanding artist but also a promising athlete."
+        },
+        {
+          "original": "Jessica was impressed with the magic show. Her friends were also impressed with the magic show.",
+          "combined": "Not only Jessica but also her friends were impressed with the magic show."
+        }
+      ]
+    },
+    {
+      "id": "g2",
+      "title": "句型 2：By the time 與完成時態的搭配",
+      "structure": "By the time + S + V ...",
+      "explanation": "By the time 表示「在……之前 / 到……的時候」。常用於強調某一動作在另一個時間點或動作發生前就已經完成：\n1. 過去時間軸：By the time + S + 過去式 (V-ed), S + had + p.p. (過去完成式)\n2. 未來時間軸：By the time + S + 現在式 (代替未來), S + will have + p.p. (未來完成式)",
+      "sentence_en": "By the time he got to human beings, he had run out of gifts.",
+      "sentence_tw": "在他的來到人類面前時，他的禮物已經用光了。",
+      "examples": [
+        "By the time the police arrived at the scene, the bank robbers had run away.",
+        "By the time you read this letter, I will have boarded a plane to Sydney.",
+        "By the time Sasha goes to college, her parents will have turned 65."
+      ]
+    }
+  ]
+}
