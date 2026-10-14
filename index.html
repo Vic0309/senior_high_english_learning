@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高中英文單字朗讀與學習網</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>高中英文課文單字隨身聽</h1>
+    <div class="lesson-selector">
+      <label for="lessonSelect">選擇課文：</label>
+      <select id="lessonSelect" onchange="loadLesson(this.value)">
+        <option value="data/lesson1.json">高一 第一課 (B1L1)</option>
+        <!-- 未來新增課文直接加選項 -->
+      </select>
+    </div>
+  </header>
+
+  <!-- 車用大按鈕控制列 -->
+  <div class="player-controls">
+    <button id="btnPlay" onclick="startAudioPlayer()">▶ 順序播放全部</button>
+    <button id="btnPause" onclick="pauseAudioPlayer()">⏸ 暫停</button>
+    <button id="btnResume" onclick="resumeAudioPlayer()">⏯ 繼續朗讀</button>
+    <button id="btnStop" onclick="stopAudioPlayer()">⏹ 停止</button>
+    <div id="statusText">目前狀態：靜止</div>
+  </div>
+
+  <main>
+    <h2>單字與片語列表（點擊可從該單字開始朗讀）</h2>
+    <table id="wordTable">
+      <thead>
+        <tr>
+          <th>Word / Phonetic</th>
+          <th>Definition</th>
+          <th>Example Sentence</th>
+          <th>深入解析與使用時機</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="wordList">
+        <!-- 由 JavaScript 動態生成 -->
+      </tbody>
+    </table>
+
+    <section id="grammarSection">
+      <h2>核心句型與文法</h2>
+      <div id="grammarList"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
