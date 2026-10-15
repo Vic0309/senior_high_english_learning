@@ -106,25 +106,18 @@ function speakText(text, lang = 'en-US', rate = 0.9) {
   return new Promise((resolve) => {
     if (!isPlaying) return resolve();
     
-    // 每次發聲前先取消殘餘語音，避免 iOS 語音佇列卡死
     synth.cancel();
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = lang;
     utterance.rate = rate;
     
-    utterance.onend = () => {
-      resolve();
-    };
-    utterance.onerror = (e) => {
-      console.warn("Speech synthesis error:", e);
-      resolve();
-    };
+    utterance.onend = () => resolve();
+    utterance.onerror = () => resolve();
     
     synth.speak(utterance);
 
-    // [iOS Safari 救命機制]：
-    // Safari 有時計時器會漏掉 onend 事件，加入安全超時機制確保流程能繼續
+    // 安全超時防卡死機制
     const estimatedTime = (text.length * 150) + 1000; 
     let finished = false;
     const originalResolve = resolve;
@@ -142,12 +135,27 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// ----------------------------------------------------
+// iOS 關鍵解鎖：強制喚醒語音引擎
+// ----------------------------------------------------
+function unlockIOSAudio() {
+  return new Promise((resolve) => {
+    const utterance = new SpeechSynthesisUtterance(" ");
+    utterance.volume = 0.01; // 幾近無聲
+    utterance.rate = 1.0;
+    utterance.onend = () => resolve();
+    utterance.onerror = () => resolve();
+    synth.speak(utterance);
+    // 保險起見，若 300ms 沒回調直接強制解鎖
+    setTimeout(resolve, 300);
+  });
+}
+
 async function playWordLoop() {
   await requestWakeLock();
 
-  // [重要] iOS  Safari 喚醒音訊管線：
-  // 首次播放前先執行一次極短的靜默解鎖，確保後續朗讀有聲音
-  if (synth.speaking) synth.cancel();
+  // 每次開始大循環前，先執行 iOS 語音引擎解鎖
+  await unlockIOSAudio();
 
   while (currentWordIndex < currentWords.length && isPlaying) {
     const item = currentWords[currentWordIndex];
@@ -193,6 +201,10 @@ async function playWordLoop() {
 // 播放器控制按鈕
 // ----------------------------------------------------
 async function startAudioPlayer() {
+  // 透過使用者點擊事件立即解鎖一次
+  if (synth.speaking) synth.cancel();
+  await unlockIOSAudio();
+
   isPlaying = true;
   isPaused = false;
   currentWordIndex = 0;
@@ -201,6 +213,8 @@ async function startAudioPlayer() {
 
 async function playFromIndex(index) {
   synth.cancel();
+  await unlockIOSAudio();
+
   isPlaying = true;
   isPaused = false;
   currentWordIndex = index;
@@ -219,14 +233,14 @@ async function pauseAudioPlayer() {
 
 async function resumeAudioPlayer() {
   if (isPaused) {
+    await unlockIOSAudio();
     synth.resume();
     isPlaying = true;
     isPaused = false;
     updateStatus("繼續朗讀...");
     await requestWakeLock();
   } else if (!isPlaying) {
-    isPlaying = true;
-    playWordLoop();
+    startAudioPlayer();
   }
 }
 
