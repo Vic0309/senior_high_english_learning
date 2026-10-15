@@ -2,54 +2,477 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>高中英文單字朗讀與學習網</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>高中英文單字隨身聽 (Drive & Learn)</title>
+  <style>
+    /* 全局基底設定 */
+    * { box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+      margin: 0; 
+      padding: 15px; 
+      background: #f8f9fa; 
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* 書籍/課文選擇區 */
+    .header { 
+      display: flex; 
+      gap: 10px; 
+      margin-bottom: 15px; 
+      align-items: center; 
+      background: white;
+      padding: 12px 15px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    select { 
+      flex: 1;
+      padding: 8px 12px; 
+      font-size: 16px; 
+      border-radius: 8px; 
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    /* 開車模式控制器 - 手機友好的 Flexbox 佈局 */
+    .drive-control { 
+      background: #007aff; 
+      color: white; 
+      padding: 15px; 
+      border-radius: 12px; 
+      margin-bottom: 15px; 
+      text-align: center; 
+      box-shadow: 0 2px 8px rgba(0,122,255,0.25);
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+    }
+    .drive-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .btn-group {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn { 
+      padding: 10px 16px; 
+      font-size: 15px; 
+      border: none; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-weight: bold; 
+      flex: 1;
+      min-width: 100px;
+      transition: background 0.2s;
+    }
+    .btn-play { background: #34c759; color: white; }
+    .btn-pause { background: #ff9500; color: white; }
+    .btn-stop { background: #ff3b30; color: white; }
+
+    /* 表格橫向滾動容器 */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    /* 表格基本設定 */
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      min-width: 750px;
+    }
+    th, td { 
+      padding: 12px 10px; 
+      text-align: left; 
+      border-bottom: 1px solid #eee; 
+      vertical-align: top;
+      word-break: break-word;
+    }
+    th { 
+      background: #f1f3f5; 
+      font-size: 14px;
+      color: #495057;
+      white-space: nowrap;
+    }
+    .audio-btn {
+      background: #e9ecef;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .playing-row { 
+      background-color: #e7f5ff !important; 
+      border-left: 5px solid #007aff;
+    }
+
+    /* 句型專區 */
+    .grammar-section {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .grammar-card {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+    .grammar-card:last-child { border-bottom: none; }
+
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .drive-control { padding: 12px; }
+      .btn { padding: 12px 10px; font-size: 14px; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>高中英文課文單字隨身聽</h1>
-    <div class="lesson-selector">
-      <label for="lessonSelect">選擇課文：</label>
-      <select id="lessonSelect" onchange="loadLesson(this.value)">
-        <option value="data/senior_high_2_up_lesson3.json">高二上學期第三課</option>
-        <!-- 未來新增課文直接加選項 -->
-      </select>
-    </div>
-  </header>
 
-  <!-- 車用大按鈕控制列 -->
-  <div class="player-controls">
-    <button id="btnPlay" onclick="startAudioPlayer()">▶ 順序播放全部</button>
-    <button id="btnPause" onclick="pauseAudioPlayer()">⏸ 暫停</button>
-    <button id="btnResume" onclick="resumeAudioPlayer()">⏯ 繼續朗讀</button>
-    <button id="btnStop" onclick="stopAudioPlayer()">⏹ 停止</button>
-    <div id="statusText">目前狀態：靜止</div>
+<div class="container">
+  <div class="header">
+    <label for="lessonSelect"><strong>選擇課文：</strong></label>
+    <select id="lessonSelect" onchange="loadSelectedLesson()">
+      <option value="data/senior_high_2_up_lesson3.json">高二上第三課</option>
+      <!-- 未來新增課文直接加在這裡 -->
+    </select>
   </div>
 
-  <main>
-    <h2>單字與片語列表（點擊可從該單字開始朗讀）</h2>
-    <table id="wordTable">
+  <!-- 開車模式 / 連續播放控制器 -->
+  <div class="drive-control">
+    <span class="drive-title">🚗 開車/跟讀輪播模式</span>
+    <div class="btn-group">
+      <button id="playBtn" class="btn btn-play" onclick="startAutoPlay()">▶ 開始輪播</button>
+      <button id="pauseBtn" class="btn btn-pause" onclick="togglePause()" style="display:none;">⏸ 暫停</button>
+      <button class="btn btn-stop" onclick="stopAutoPlay()">⏹ 停止</button>
+    </div>
+    <div id="nowPlayingText" style="margin-top: 10px; font-size: 14px; opacity: 0.95;">狀態：未播放</div>
+  </div>
+
+  <!-- 單字與片語列表 -->
+  <div class="table-container">
+    <table id="vocabTable">
       <thead>
         <tr>
-          <th>Word / Phonetic</th>
-          <th>Definition</th>
-          <th>Example Sentence</th>
+          <th style="width: 50px;">語音</th>
+          <th style="width: 120px;">Word / KK</th>
+          <th style="width: 28%;">Definition</th>
+          <th>Example (英/中)</th>
           <th>深入解析與使用時機</th>
-          <th>操作</th>
         </tr>
       </thead>
-      <tbody id="wordList">
-        <!-- 由 JavaScript 動態生成 -->
-      </tbody>
+      <tbody id="tableBody"></tbody>
     </table>
+  </div>
 
-    <section id="grammarSection">
-      <h2>核心句型與文法</h2>
-      <div id="grammarList"></div>
-    </section>
-  </main>
+  <!-- 核心句型區 -->
+  <div class="grammar-section" id="grammarContainer" style="display:none;">
+    <h3>📚 核心句型與文法</h3>
+    <div id="grammarList"></div>
+  </div>
+</div>
 
-  <script src="app.js"></script>
+<script>
+  let currentWords = [];
+  let isPlaying = false;
+  let isPaused = false;
+  let currentIndex = 0;
+  let currentUtterance = null;
+  let wakeLock = null;
+  const synth = window.speechSynthesis;
+
+  // iOS 語音解鎖機制
+  function unlockAudio() {
+    if (synth && synth.speak) {
+      const silentUtterance = new SpeechSynthesisUtterance(' ');
+      silentUtterance.volume = 0.01;
+      synth.speak(silentUtterance);
+    }
+  }
+
+  // 螢幕常亮控制 (Wake Lock API)
+  function requestWakeLock() {
+    if ('wakeLock' in navigator) {
+      navigator.wakeLock.request('screen').then(lock => {
+        wakeLock = lock;
+      }).catch(err => {
+        console.log('Wake Lock 啟用未成功:', err.message);
+      });
+    }
+  }
+
+  function releaseWakeLock() {
+    if (wakeLock !== null) {
+      wakeLock.release().then(() => { wakeLock = null; }).catch(() => {});
+    }
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (wakeLock !== null && document.visibilityState === 'visible' && isPlaying && !isPaused) {
+      requestWakeLock();
+    }
+  });
+
+  // 載入指定的 JSON 課文
+  async function loadSelectedLesson() {
+    stopAutoPlay();
+    const filePath = document.getElementById('lessonSelect').value;
+    try {
+      const res = await fetch(filePath);
+      if (!res.ok) throw new Error(`無法讀取檔案 ${filePath} (HTTP ${res.status})`);
+      const data = await res.json();
+      currentWords = data.words || [];
+      renderTable(data);
+      renderGrammar(data.patterns);
+    } catch (error) {
+      alert('載入課文失敗：請確認 data 資料夾與 JSON 檔案是否正確。');
+      console.error(error);
+    }
+  }
+
+  // 渲染表格
+  function renderTable(data) {
+    const tbody = document.getElementById('tableBody');
+    tbody.innerHTML = currentWords.map((item, index) => `
+      <tr id="row-${index}" onclick="playFromIndex(${index})" style="cursor: pointer;">
+        <td><button class="audio-btn" onclick="event.stopPropagation(); playFromIndex(${index});">🔊</button></td>
+        <td>
+          <strong>${item.word}</strong><br>
+          <small style="color: #666;">${item.pos || ''} ${item.kk || ''}</small>
+        </td>
+        <td>
+          <div><strong>英：</strong>${item.definition_en}</div>
+          <div style="color: #007aff; margin-top: 3px;"><strong>中：</strong>${item.definition_tw}</div>
+        </td>
+        <td>
+          <div>${item.sentence_en}</div>
+          <div style="color: #666; font-size: 0.9em; margin-top: 2px;">${item.sentence_tw}</div>
+        </td>
+        <td style="font-size: 13.5px;">
+          <div><strong>解析：</strong>${item.analysis || ''}</div>
+          <div style="color: #d97706; margin-top: 3px;"><strong>時機：</strong>${item.timing || ''}</div>
+        </td>
+      </tr>
+    `).join('');
+  }
+
+  // 渲染句型
+  function renderGrammar(patterns) {
+    const container = document.getElementById('grammarContainer');
+    const list = document.getElementById('grammarList');
+    if (!patterns || patterns.length === 0) {
+      container.style.display = 'none';
+      return;
+    }
+    container.style.display = 'block';
+    list.innerHTML = patterns.map(p => `
+      <div class="grammar-card">
+        <h4 style="color: #007aff; margin-bottom: 4px;">${p.title}</h4>
+        <p style="margin: 2px 0;"><strong>結構：</strong><code>${p.structure}</code></p>
+        <p style="margin: 2px 0;"><strong>解析：</strong>${p.explanation}</p>
+        <p style="margin: 2px 0; color: #555;"><strong>例句：</strong>${p.sentence_en} (${p.sentence_tw})</p>
+      </div>
+    `).join('');
+  }
+
+  // 可隨時被中斷的延遲等待函式 (使用你原本有效的機制)
+  function delay(ms) {
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(resolve, ms);
+      const checkInterval = setInterval(() => {
+        if (!isPlaying || isPaused) {
+          clearTimeout(timer);
+          clearInterval(checkInterval);
+          reject(new Error('Interrupted'));
+        }
+      }, 50);
+    });
+  }
+
+  // 文字朗讀 (使用你原本有效的穩定結構)
+  function speakText(text, lang = 'en-US', speed = 0.9) {
+    return new Promise((resolve, reject) => {
+      if (!isPlaying || isPaused) return reject(new Error('Interrupted'));
+
+      synth.cancel();
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = speed;
+      currentUtterance = utterance;
+
+      utterance.onend = () => {
+        currentUtterance = null;
+        resolve();
+      };
+
+      utterance.onerror = (e) => {
+        currentUtterance = null;
+        reject(new Error('Speech error'));
+      };
+
+      synth.speak(utterance);
+    });
+  }
+
+  // 完整朗讀一個單字的流程 (單字 ➔ 中文 ➔ 例句 ➔ 深入解析 ➔ 留空 2.5 秒跟讀)
+  async function speakVocabItem(item) {
+    // 1. 唸英文單字
+    await speakText(item.word, 'en-US', 0.85);
+    await delay(500);
+
+    // 2. 唸中文單字定義
+    await speakText(item.definition_tw, 'zh-TW', 0.9);
+    await delay(500);
+
+    // 3. 唸英文例句
+    if (item.sentence_en) {
+      await speakText(item.sentence_en, 'en-US', 0.9);
+      await delay(500);
+    }
+
+    // 4. 唸中文深入解析與使用時機
+    if (item.analysis) {
+      await speakText("解析：" + item.analysis + "。使用時機：" + item.timing, 'zh-TW', 0.95);
+    }
+
+    // 5. 留空 3.5 秒供跟讀與思考
+    await delay(2500);
+  }
+
+  // 核心功能：從指定單字開始繼續/輪播
+  async function playFromIndex(index) {
+    unlockAudio();
+    synth.cancel();
+    isPlaying = false;
+    isPaused = false;
+
+    currentIndex = index;
+    isPlaying = true;
+    
+    requestWakeLock();
+    updateUI();
+
+    while (currentIndex < currentWords.length && isPlaying && !isPaused) {
+      highlightRow(currentIndex);
+      const item = currentWords[currentIndex];
+      document.getElementById('nowPlayingText').innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${item.word}`;
+
+      try {
+        await speakVocabItem(item);
+        if (isPlaying && !isPaused) {
+          currentIndex++;
+        }
+      } catch (err) {
+        break;
+      }
+    }
+
+    if (currentIndex >= currentWords.length) {
+      stopAutoPlay();
+    }
+  }
+
+  // 開始輪播
+  function startAutoPlay() {
+    unlockAudio();
+    if (isPlaying && !isPaused) return;
+
+    if (isPaused) {
+      isPaused = false;
+      playFromIndex(currentIndex);
+    } else {
+      playFromIndex(0);
+    }
+  }
+
+  // 暫停 / 繼續 切換
+  function togglePause() {
+    unlockAudio();
+    if (!isPlaying && !isPaused) return;
+
+    if (!isPaused) {
+      isPaused = true;
+      synth.cancel();
+      releaseWakeLock();
+      updateUI();
+    } else {
+      isPaused = false;
+      playFromIndex(currentIndex);
+    }
+  }
+
+  // 停止播放
+  function stopAutoPlay() {
+    isPlaying = false;
+    isPaused = false;
+    currentIndex = 0;
+    synth.cancel();
+    releaseWakeLock();
+    highlightRow(-1);
+    updateUI();
+  }
+
+  // 高亮顯示目前播放列
+  function highlightRow(index) {
+    document.querySelectorAll('tr').forEach(r => r.classList.remove('playing-row'));
+    if (index >= 0) {
+      const row = document.getElementById(`row-${index}`);
+      if (row) {
+        row.classList.add('playing-row');
+        row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }
+
+  // 更新介面按鈕狀態
+  function updateUI() {
+    const playBtn = document.getElementById('playBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const statusText = document.getElementById('nowPlayingText');
+
+    if (!isPlaying && !isPaused) {
+      playBtn.innerText = '▶ 開始輪播';
+      playBtn.style.display = 'inline-block';
+      pauseBtn.style.display = 'none';
+      statusText.innerText = '狀態：未播放';
+    } else if (isPaused) {
+      pauseBtn.innerText = '▶ 繼續';
+      pauseBtn.style.display = 'inline-block';
+      playBtn.style.display = 'none';
+      statusText.innerText = `狀態：已暫停 (${currentWords[currentIndex]?.word || ''})`;
+    } else {
+      pauseBtn.innerText = '⏸ 暫停';
+      pauseBtn.style.display = 'inline-block';
+      playBtn.style.display = 'none';
+      statusText.innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${currentWords[currentIndex]?.word || ''}`;
+    }
+  }
+
+  // 頁面載入初始化
+  loadSelectedLesson();
+</script>
 </body>
 </html>
