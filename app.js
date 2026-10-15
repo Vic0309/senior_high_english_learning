@@ -9,39 +9,27 @@ let synth = window.speechSynthesis;
 // ----------------------------------------------------
 let wakeLock = null;
 
-// 申請螢幕保持開啟
 async function requestWakeLock() {
   if ('wakeLock' in navigator) {
     try {
       wakeLock = await navigator.wakeLock.request('screen');
-      console.log('Screen Wake Lock 已啟用：手機螢幕將保持開啟');
-      
-      // 監聽 Wake Lock 被系統強制釋放的事件
-      wakeLock.addEventListener('release', () => {
-        console.log('Screen Wake Lock 已被釋放');
-      });
     } catch (err) {
-      console.warn(`Wake Lock 申請失敗 (${err.name}: ${err.message})`);
+      console.warn(`Wake Lock 申請失敗: ${err.message}`);
     }
-  } else {
-    console.warn('目前瀏覽器/裝置不支援 Screen Wake Lock API');
   }
 }
 
-// 釋放螢幕常亮鎖定
 async function releaseWakeLock() {
   if (wakeLock !== null) {
     try {
       await wakeLock.release();
       wakeLock = null;
-      console.log('Screen Wake Lock 已主動釋放：恢復預設螢幕休眠');
     } catch (err) {
       console.error(`Wake Lock 釋放失敗: ${err.message}`);
     }
   }
 }
 
-// 當使用者切換分頁/回到 Safari 時，若仍在播放中則重新申請鎖定
 document.addEventListener('visibilitychange', async () => {
   if (wakeLock !== null && document.visibilityState === 'visible' && isPlaying) {
     await requestWakeLock();
@@ -112,20 +100,41 @@ function renderGrammar(patterns) {
 }
 
 // ----------------------------------------------------
-// 語音朗讀核心邏輯
+// iOS 專用穩定語音朗讀核心
 // ----------------------------------------------------
 function speakText(text, lang = 'en-US', rate = 0.9) {
   return new Promise((resolve) => {
     if (!isPlaying) return resolve();
     
+    // 每次發聲前先取消殘餘語音，避免 iOS 語音佇列卡死
+    synth.cancel();
+
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = lang;
-    utterance.rate = rate; // 駕車跟讀適宜語速
+    utterance.rate = rate;
     
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve(); // 防止單一錯誤中斷播報流程
+    utterance.onend = () => {
+      resolve();
+    };
+    utterance.onerror = (e) => {
+      console.warn("Speech synthesis error:", e);
+      resolve();
+    };
     
     synth.speak(utterance);
+
+    // [iOS Safari 救命機制]：
+    // Safari 有時計時器會漏掉 onend 事件，加入安全超時機制確保流程能繼續
+    const estimatedTime = (text.length * 150) + 1000; 
+    let finished = false;
+    const originalResolve = resolve;
+    resolve = () => {
+      if (!finished) {
+        finished = true;
+        originalResolve();
+      }
+    };
+    setTimeout(resolve, Math.max(estimatedTime, 3000));
   });
 }
 
@@ -134,8 +143,11 @@ function sleep(ms) {
 }
 
 async function playWordLoop() {
-  // 開始播放時：申請 Screen Wake Lock 強制保持螢幕亮著
   await requestWakeLock();
+
+  // [重要] iOS  Safari 喚醒音訊管線：
+  // 首次播放前先執行一次極短的靜默解鎖，確保後續朗讀有聲音
+  if (synth.speaking) synth.cancel();
 
   while (currentWordIndex < currentWords.length && isPlaying) {
     const item = currentWords[currentWordIndex];
@@ -145,16 +157,16 @@ async function playWordLoop() {
 
     // 1. 唸英文單字
     await speakText(item.word, 'en-US');
-    await sleep(500);
+    await sleep(400);
 
     // 2. 唸中文單字定義
     await speakText(item.definition_tw, 'zh-TW');
-    await sleep(500);
+    await sleep(400);
 
     // 3. 唸英文例句
     if (item.sentence_en) {
       await speakText(item.sentence_en, 'en-US');
-      await sleep(500);
+      await sleep(400);
     }
 
     // 4. 唸中文深入解析與使用時機
@@ -178,10 +190,9 @@ async function playWordLoop() {
 }
 
 // ----------------------------------------------------
-// 播放器控制按鈕（對外介面）
+// 播放器控制按鈕
 // ----------------------------------------------------
 async function startAudioPlayer() {
-  synth.cancel();
   isPlaying = true;
   isPaused = false;
   currentWordIndex = 0;
@@ -202,7 +213,6 @@ async function pauseAudioPlayer() {
     isPlaying = false;
     isPaused = true;
     updateStatus("已暫停朗讀");
-    // 暫停時釋放 Wake Lock 讓螢幕可依系統設定休眠
     await releaseWakeLock();
   }
 }
@@ -225,7 +235,6 @@ async function stopAudioPlayer() {
   isPlaying = false;
   isPaused = false;
   updateStatus("目前狀態：靜止");
-  // 停止播放時主動釋放 Screen Wake Lock
   await releaseWakeLock();
 }
 
@@ -244,11 +253,7 @@ function updateStatus(msg) {
 }
 
 window.onload = () => {
-  // 自動取得畫面上選單目前選中的檔案路徑
   const selectElement = document.getElementById("lessonSelect");
-  if (selectElement && selectElement.value) {
-    loadLesson(selectElement.value);
-  } else {
-    loadLesson("data/lesson1.json"); // 預備預設值
-  }
+  const initialPath = (selectElement && selectElement.value) ? selectElement.value : "data/lesson1.json";
+  loadLesson(initialPath);
 };
