@@ -1,0 +1,770 @@
+{
+  "lesson_id": "B1L4",
+  "lesson_title": "Senior High English Lesson 4 - Vocabulary",
+  "words": [
+    {
+      "id": "w1",
+      "word": "chat",
+      "pos": "n. [C] / vi.",
+      "kk": "[tʃæt]",
+      "definition_en": "an informal, friendly conversation.",
+      "definition_tw": "閒聊；聊天",
+      "sentence_en": "We had a friendly chat over a cup of coffee.",
+      "sentence_tw": "我們喝著咖啡，愉快地閒聊。",
+      "analysis": "非正式、輕鬆無壓力的對話。",
+      "timing": "描述日常社交、線上通訊或朋友聚會時。"
+    },
+    {
+      "id": "w2",
+      "word": "colorful",
+      "pos": "adj.",
+      "kk": "[ˈkʌlɚfəl]",
+      "definition_en": "having much or varied color; full of interest or excitement.",
+      "definition_tw": "多采多姿的；色彩鮮豔的",
+      "sentence_en": "She led a colorful and adventurous life as a journalist.",
+      "sentence_tw": "作為一名記者，她過著多采多姿且充滿冒險的生活。",
+      "analysis": "既指視覺色彩繽紛，也比喻經歷豐富精采。",
+      "timing": "描繪慶典、藝術作品或豐富的人生經歷時。"
+    },
+    {
+      "id": "w3",
+      "word": "privacy",
+      "pos": "n. [U]",
+      "kk": "[ˈpraɪvəsi]",
+      "definition_en": "the state of being free from public attention or disturbance.",
+      "definition_tw": "隱私（權）",
+      "sentence_en": "Social media users should pay close attention to their personal privacy.",
+      "sentence_tw": "社群媒體使用者應該密切注意個人隱私。",
+      "analysis": "不可數名詞，指個人私密不願受打擾的狀態。",
+      "timing": "討論網路安全、個人資料保障或生活隱私時。"
+    },
+    {
+      "id": "w4",
+      "word": "logic",
+      "pos": "n. [U]",
+      "kk": "[ˈlɑdʒɪk]",
+      "definition_en": "reasoning conducted or assessed according to strict principles.",
+      "definition_tw": "邏輯；思考規律",
+      "related_words": ["logical (adj.) 合乎邏輯的", "logically (adv.) 合乎邏輯地"],
+      "sentence_en": "There is clear logic behind his decision-making process.",
+      "sentence_tw": "在他的決策過程背後有著清晰的邏輯。",
+      "analysis": "不可數名詞，強調思考與推理的條理。",
+      "timing": "分析推理過程、辯論或程式思維時。"
+    },
+    {
+      "id": "w5",
+      "word": "endless",
+      "pos": "adj.",
+      "kk": "[ˈɛndlɪs]",
+      "definition_en": "having or seeming to have no end or limit.",
+      "definition_tw": "無休止的；無窮盡的",
+      "sentence_en": "The internet provides an endless supply of information.",
+      "sentence_tw": "網際網路提供了源源不絕的資訊。",
+      "analysis": "形容無限延續、沒有盡頭的事物。",
+      "timing": "描述無窮可能性、繁瑣工作或遼闊景致時。"
+    },
+    {
+      "id": "w6",
+      "word": "playful",
+      "pos": "adj.",
+      "kk": "[ˈplefəl]",
+      "definition_en": "full of fun and high spirits; lighthearted.",
+      "definition_tw": "有趣的；愛開玩笑的",
+      "sentence_en": "The puppy was very playful and chased the ball around.",
+      "sentence_tw": "這隻小狗非常愛玩，追著球跑來跑去。",
+      "analysis": "形容性格活潑愛玩，互動輕鬆。",
+      "timing": "描述寵物互動、兒童舉止或幽默語氣時。"
+    },
+    {
+      "id": "w7",
+      "word": "virtual",
+      "pos": "adj.",
+      "kk": "[ˈvɝtʃuəl]",
+      "definition_en": "made, done, or seen on a computer or on the internet.",
+      "definition_tw": "虛擬的",
+      "sentence_en": "During the pandemic, many students attended virtual classes.",
+      "sentence_tw": "在疫情期間，許多學生參加了虛擬線上課程。",
+      "analysis": "指透過電腦或網路模擬產生的情境。",
+      "timing": "討論線上學習、元宇宙、電玩或遠距會議時。"
+    },
+    {
+      "id": "w8",
+      "word": "scroll",
+      "pos": "vi. / vt.",
+      "kk": "[skrol]",
+      "definition_en": "move displayed text or graphics on a computer screen.",
+      "definition_tw": "滑動（螢幕）",
+      "sentence_en": "He spent hours scrolling through social media on his phone.",
+      "sentence_tw": "他花了數小時在手機上滑社群媒體。",
+      "analysis": "常用於 scroll down / scroll through 瀏覽網頁或社群。",
+      "timing": "描述使用智慧型手機或瀏覽網頁時。"
+    },
+    {
+      "id": "w9",
+      "word": "manage",
+      "pos": "vt. / vi.",
+      "kk": "[ˈmænɪdʒ]",
+      "definition_en": "be in charge of; succeed in achieving something.",
+      "definition_tw": "管理；經營",
+      "patterns": ["manage to V（設法做成某事）"],
+      "sentence_en": "She learned how to manage her time effectively.",
+      "sentence_tw": "她學會了如何有效管理自己的時間。",
+      "analysis": "及物動詞指經營；manage to V 表設法克服困難完成任務。",
+      "timing": "討論時間管理、企業經營或克服困境時。"
+    },
+    {
+      "id": "w10",
+      "word": "sentimental",
+      "pos": "adj.",
+      "kk": "[ˌsɛntəˈmɛntl]",
+      "definition_en": "of or prompted by feelings of tenderness, sadness, or nostalgia.",
+      "definition_tw": "充滿感情的；多愁善感的",
+      "sentence_en": "This old photo album has great sentimental value to me.",
+      "sentence_tw": "這本舊相簿對我來說具有重大情感價值。",
+      "analysis": "帶有懷舊感或對舊物/回憶寄予深厚情感。",
+      "timing": "討論紀念品、老照片、童年回憶或感人劇情時。"
+    },
+    {
+      "id": "w11",
+      "word": "artificial",
+      "pos": "adj.",
+      "kk": "[ˌɑrtəˈfɪʃəl]",
+      "definition_en": "made or produced by human beings rather than occurring naturally.",
+      "definition_tw": "人工的；人造的",
+      "collocations": ["artificial intelligence（人工智慧）"],
+      "sentence_en": "Artificial intelligence is changing the way we live and work.",
+      "sentence_tw": "人工智慧正在改變我們的生活和工作方式。",
+      "analysis": "與 natural 相對，指人造材質或科技模擬產物。",
+      "timing": "討論 AI 科技、人造材質或加工食品時。"
+    },
+    {
+      "id": "w12",
+      "word": "decay",
+      "pos": "vi. / n. [U]",
+      "kk": "[dɪˈke]",
+      "definition_en": "rot or decompose through the action of bacteria.",
+      "definition_tw": "腐爛；衰敗",
+      "sentence_en": "Sugar can cause tooth decay if you don't brush properly.",
+      "sentence_tw": "如果你沒有好好刷牙，糖分會導致蛀牙（牙齒腐爛）。",
+      "analysis": "可指有機物腐敗，也可指文明或健康的衰退。",
+      "timing": "討論口腔衛生、自然分解或歷史文明興衰時。"
+    },
+    {
+      "id": "w13",
+      "word": "donate",
+      "pos": "vt. / vi.",
+      "kk": "[ˈdonet]",
+      "definition_en": "give money or goods for a good cause, especially to a charity.",
+      "definition_tw": "捐贈；捐獻",
+      "sentence_en": "Many people donated money to help the earthquake victims.",
+      "sentence_tw": "許多人捐款幫助地震受害者。",
+      "analysis": "指無償捐出金錢、物資、血液或器官。",
+      "timing": "討論慈善公益、捐血賑災或社會福利時。"
+    },
+    {
+      "id": "w14",
+      "word": "adoption",
+      "pos": "n. [U, C]",
+      "kk": "[əˈdɑpʃən]",
+      "definition_en": "the action of adopting a child or animal; accepting an idea.",
+      "definition_tw": "領養；收養",
+      "related_words": ["adopt (vt.) 領養；採用"],
+      "sentence_en": "They decided to support pet adoption instead of buying.",
+      "sentence_tw": "他們決定支持寵物領養，而不是購買。",
+      "analysis": "指領養兒童/寵物，也可指新制度或技術的採用。",
+      "timing": "討論流浪動物保護、家庭領養或新制度引進時。"
+    },
+    {
+      "id": "w15",
+      "word": "website",
+      "pos": "n. [C]",
+      "kk": "[ˈwɛbˌsaɪt]",
+      "definition_en": "a set of related web pages under a single domain name.",
+      "definition_tw": "網站",
+      "sentence_en": "You can find more information on our official website.",
+      "sentence_tw": "您可以在我們的官方網站上找到更多資訊。",
+      "analysis": "網際網路上的特定站台。",
+      "timing": "討論網路資訊、線上購物或網址引導時。"
+    },
+    {
+      "id": "w16",
+      "word": "despite",
+      "pos": "prep.",
+      "kk": "[dɪˈspaɪt]",
+      "definition_en": "without being affected by; in spite of.",
+      "definition_tw": "儘管；即使",
+      "comparison": "despite + N/V-ing vs. although + S + V",
+      "sentence_en": "Despite the heavy rain, they enjoyed their outdoor concert.",
+      "sentence_tw": "儘管下著大雨，他們仍然很享受戶外演唱會。",
+      "analysis": "介系詞，後面只能接名詞或動名詞，不可接子句。",
+      "timing": "作文撰寫轉折語氣、克服逆境或對比落差時。"
+    },
+    {
+      "id": "w17",
+      "word": "teddy",
+      "pos": "n. [C]",
+      "kk": "[ˈtɛdi]",
+      "definition_en": "a soft toy bear.",
+      "definition_tw": "泰迪熊",
+      "sentence_en": "The little child holds a teddy bear while sleeping.",
+      "sentence_tw": "這孩子睡覺時抱著一隻泰迪熊。",
+      "analysis": "指填充熊玩具，帶來安全感與陪伴感。",
+      "timing": "描述童年回憶、陪伴玩具或禮物時。"
+    },
+    {
+      "id": "w18",
+      "word": "stuffed toy",
+      "pos": "n. [C]",
+      "kk": "[stʌft tɔɪ]",
+      "definition_en": "a toy made of cloth and filled with soft material.",
+      "definition_tw": "填充玩具",
+      "sentence_en": "She collects all kinds of soft stuffed toys in her bedroom.",
+      "sentence_tw": "她在臥室裡收集了各種軟綿綿的填充玩具。",
+      "analysis": "泛指內部塞滿棉花等軟質填充物的布偶。",
+      "timing": "描述玩具、禮物或童趣裝飾時。"
+    },
+    {
+      "id": "w19",
+      "word": "telehealth",
+      "pos": "n. [U]",
+      "kk": "[ˈtɛliˌhɛlθ]",
+      "definition_en": "healthcare provided remotely via telecommunications technology.",
+      "definition_tw": "遠距醫療",
+      "sentence_en": "Telehealth services became essential during the global pandemic.",
+      "sentence_tw": "在全球疫情期間，遠距醫療服務變得至關重要。",
+      "analysis": "指利用視訊通訊技術進行遠距看診與醫療諮詢。",
+      "timing": "討論智慧醫療、偏鄉醫療資源或數位健康時。"
+    },
+    {
+      "id": "w20",
+      "word": "accessibility",
+      "pos": "n. [U]",
+      "kk": "[ækˌsɛsəˈbɪləti]",
+      "definition_en": "the quality of being easy to reach, enter, or use.",
+      "definition_tw": "易接近；易得到",
+      "related_words": ["accessible (adj.) 可接近的；易獲得的"],
+      "sentence_en": "The subway system improves the accessibility of downtown areas.",
+      "sentence_tw": "捷運系統提高了市中心區域的易達性。",
+      "analysis": "指設施、資訊或服務是否容易獲取與抵達。",
+      "timing": "討論無障礙設施、公共運輸或數位資源普及度時。"
+    },
+    {
+      "id": "w21",
+      "word": "specialize",
+      "pos": "vi.",
+      "kk": "[ˈspɛʃəˌlaɪz]",
+      "definition_en": "concentrate on and become expert in a particular subject.",
+      "definition_tw": "專門研究；專攻",
+      "collocations": ["specialize in + N（專攻/精通……）"],
+      "sentence_en": "Dr. Lin specializes in heart surgery.",
+      "sentence_tw": "林醫師專攻心臟手術。",
+      "analysis": "不及物動詞，核心句型為 specialize in。",
+      "timing": "討論大學科系、醫師專長、公司核心業務時。"
+    },
+    {
+      "id": "w22",
+      "word": "sensor",
+      "pos": "n. [C]",
+      "kk": "[ˈsɛnsɚ]",
+      "definition_en": "a device that detects or measures a physical property.",
+      "definition_tw": "感測器；感應器",
+      "sentence_en": "The automatic doors use a motion sensor to detect visitors.",
+      "sentence_tw": "自動門使用動態感測器來偵測訪客。",
+      "analysis": "感測光線、溫度、運動或重量等物理訊號的裝置。",
+      "timing": "討論物聯網（IoT）、自動駕駛或智慧家電時。"
+    },
+    {
+      "id": "w23",
+      "word": "contagious",
+      "pos": "adj.",
+      "kk": "[kənˈtedʒəs]",
+      "definition_en": "spread from one person or organism to another by direct or indirect contact.",
+      "definition_tw": "具傳染性的；蔓延的",
+      "sentence_en": "The flu is highly contagious, so you should wear a mask.",
+      "sentence_tw": "流感具有高度傳染性，所以你應該戴上口罩。",
+      "analysis": "指疾病易傳染，也可比喻情緒具感染力。",
+      "timing": "討論防疫、傳染病流行或歡樂氣氛感染他人時。"
+    },
+    {
+      "id": "w24",
+      "word": "consultation",
+      "pos": "n. [C, U]",
+      "kk": "[ˌkɑnsəlˈteʃən]",
+      "definition_en": "the action or process of formally consulting or discussing.",
+      "definition_tw": "諮詢；商討",
+      "related_words": ["consult (vt./vi.) 請教；諮詢"],
+      "sentence_en": "You should book a consultation with a specialist for advice.",
+      "sentence_tw": "你應該預約專科醫師的諮詢以獲得建議。",
+      "analysis": "指向專業人士（醫師、律師、顧問）尋求意見商討。",
+      "timing": "醫療門診、法律諮詢、商業顧問對談時。"
+    },
+    {
+      "id": "w25",
+      "word": "fraction",
+      "pos": "n. [C]",
+      "kk": "[ˈfrækʃən]",
+      "definition_en": "a small or tiny part or amount of something; numerical fraction.",
+      "definition_tw": "極小部分；分數",
+      "phrases": ["a fraction of...（極小部分的……）"],
+      "sentence_en": "Online stores sell products at a fraction of the cost.",
+      "sentence_tw": "網路商店以實體店極小部分的成本價格販售商品。",
+      "analysis": "數學上的分數，常比喻極微小的比例或費用。",
+      "timing": "形容花費極少、時間短暫或微小佔比時。"
+    },
+    {
+      "id": "w26",
+      "word": "deadly",
+      "pos": "adj.",
+      "kk": "[ˈdɛdli]",
+      "definition_en": "causing or able to cause death.",
+      "definition_tw": "致命的",
+      "sentence_en": "The snake carries a deadly poison.",
+      "sentence_tw": "這條蛇帶有致命毒液。",
+      "analysis": "形容能致人於死的毒素、疾病、武器或災害。",
+      "timing": "描述危險疾病、毒物、車禍或自然災害時。"
+    },
+    {
+      "id": "w27",
+      "word": "affordable",
+      "pos": "adj.",
+      "kk": "[əˈfɔrdəbl]",
+      "definition_en": "inexpensive; reasonably priced.",
+      "definition_tw": "付得起的；買得起的",
+      "sentence_en": "The government is trying to build more affordable housing.",
+      "sentence_tw": "政府正努力興建更多負擔得起的住宅。",
+      "analysis": "表示價格合理、在能力承受範圍內。",
+      "timing": "討論消費購物、住宅價格或平價產品時。"
+    },
+    {
+      "id": "w28",
+      "word": "hospitalize",
+      "pos": "vt.",
+      "kk": "[ˈhɑspətlˌaɪz]",
+      "definition_en": "admit (someone) to hospital for treatment.",
+      "definition_tw": "送……住院治療",
+      "sentence_en": "He was hospitalized for three days after the serious car accident.",
+      "sentence_tw": "在嚴重的車禍發生後，他住院治療了三天。",
+      "analysis": "常以被動形式 be hospitalized 出現，指安排住院。",
+      "timing": "描述重大傷病、急診住院或醫療照護時。"
+    },
+    {
+      "id": "w29",
+      "word": "stroke",
+      "pos": "n. [C]",
+      "kk": "[strok]",
+      "definition_en": "a sudden disabling attack caused by an interruption of blood flow to the brain.",
+      "definition_tw": "中風",
+      "sentence_en": "Fast medical treatment is vital for patients having a stroke.",
+      "sentence_tw": "快速的醫療處置對於中風患者來說至關重要。",
+      "analysis": "指腦血管阻塞或破裂所引發的急症。",
+      "timing": "討論高齡照護、急救常識或血管疾病時。"
+    },
+    {
+      "id": "w30",
+      "word": "blood clot",
+      "pos": "n. [C]",
+      "kk": "[blʌd klɑt]",
+      "definition_en": "a gelatinous mass formed by red blood cells and platelets.",
+      "definition_tw": "血栓；血塊",
+      "sentence_en": "The doctor gave him medication to dissolve the dangerous blood clot.",
+      "sentence_tw": "醫生給他藥物以溶解危險的血栓。",
+      "analysis": "血液凝結成的塊狀物，若堵塞血管會引發重症。",
+      "timing": "描述心血管疾病、手術後併發症或血液循環時。"
+    },
+    {
+      "id": "w31",
+      "word": "landmark",
+      "pos": "n. [C]",
+      "kk": "[ˈlændˌmɑrk]",
+      "definition_en": "an object or feature of a landscape or town easily recognized.",
+      "definition_tw": "地標",
+      "sentence_en": "Taipei 101 is one of the most famous landmarks in Taiwan.",
+      "sentence_tw": "台北101是台灣最著名的地標之一。",
+      "analysis": "具代表性的建築景觀，也可指歷史里程碑。",
+      "timing": "觀光旅遊、都市介紹或歷史里程碑時。"
+    },
+    {
+      "id": "w32",
+      "word": "tourist",
+      "pos": "n. [C]",
+      "kk": "[ˈtʊrɪst]",
+      "definition_en": "a person who is traveling or visiting a place for pleasure.",
+      "definition_tw": "觀光客；遊客",
+      "sentence_en": "Thousands of tourists visit the ancient castle every year.",
+      "sentence_tw": "每年有數千名遊客參觀這座古老的城堡。",
+      "analysis": "前往異地觀光休閒的人。",
+      "timing": "討論景點導覽、出國旅遊或觀光經濟時。"
+    },
+    {
+      "id": "w33",
+      "word": "tourism",
+      "pos": "n. [U]",
+      "kk": "[ˈtʊrˌɪzəm]",
+      "definition_en": "the commercial organization and operation of holidays and visits to places of interest.",
+      "definition_tw": "觀光業；旅遊業",
+      "sentence_en": "Tourism plays a vital role in the island's local economy.",
+      "sentence_tw": "觀光業在該島嶼的在地經濟中扮演著關鍵角色。",
+      "analysis": "不可數名詞，指觀光產業整體。",
+      "timing": "討論產業發展、觀光政策或地方創生時。"
+    },
+    {
+      "id": "w34",
+      "word": "involve",
+      "pos": "vt.",
+      "kk": "[ɪnˈvɑlv]",
+      "definition_en": "include (something) as a necessary part or result.",
+      "definition_tw": "包含；涉及",
+      "related_words": [
+        "involvement (n. [U]) 參與；牽涉",
+        "involved (adj.) 參與的；有關的"
+      ],
+      "sentence_en": "The new project will involve team members from different departments.",
+      "sentence_tw": "這項新專案將包含來自不同部門的團隊成員。",
+      "analysis": "指專案或活動涵蓋特定內容，被動 be involved in 表參與。",
+      "timing": "說明任務範疇、團體參與或案件牽涉時。"
+    },
+    {
+      "id": "w35",
+      "word": "clip",
+      "pos": "n. [C]",
+      "kk": "[klɪp]",
+      "definition_en": "a short extract from a movie or television program.",
+      "definition_tw": "短片；影片剪輯",
+      "sentence_en": "She posted a short video clip of her cat on the internet.",
+      "sentence_tw": "她在網路上貼出了一段她貓咪的短片剪輯。",
+      "analysis": "片段影片或音訊，短小精悍。",
+      "timing": "討論影音社群、新聞剪輯或電影預告時。"
+    },
+    {
+      "id": "w36",
+      "word": "highlight",
+      "pos": "n. [C] / vt.",
+      "kk": "[ˈhaɪˌlaɪt]",
+      "definition_en": "an outstanding part of an event; emphasize.",
+      "definition_tw": "最精彩的部分；亮點 / 強調",
+      "sentence_en": "The fireworks show was the highlight of our trip.",
+      "sentence_tw": "煙火秀是我們這次旅行中最精彩的亮點。",
+      "analysis": "指活動中最吸引人的重點，或動詞標示強調。",
+      "timing": "活動檢討、旅遊回顧或強調重點時。"
+    },
+    {
+      "id": "w37",
+      "word": "souvenir",
+      "pos": "n. [C]",
+      "kk": "[ˌsuvəˈnɪr]",
+      "definition_en": "a thing that is kept as a reminder of a place or event.",
+      "definition_tw": "紀念品",
+      "sentence_en": "She bought a keychain as a souvenir from Paris.",
+      "sentence_tw": "她買了一個鑰匙圈作為來自巴黎的紀念品。",
+      "analysis": "購買留存以資紀念的物品。",
+      "timing": "旅遊伴手禮、活動紀念物時。"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "p1",
+      "phrase": "connect with",
+      "definition_tw": "與（某人或某物）建立聯繫／連結",
+      "sentence_en": "Music helps people connect with each other across cultures.",
+      "sentence_tw": "音樂有助於來自不同文化的人們建立互相的連結。",
+      "analysis": "建立情感交流或思想共鳴。"
+    },
+    {
+      "id": "p2",
+      "phrase": "interact with...",
+      "definition_tw": "與……互動",
+      "sentence_en": "Children learn social skills when they interact with peers.",
+      "sentence_tw": "孩子們在與同儕互動時學習社交技巧。",
+      "analysis": "指雙向交流或人際互動。"
+    },
+    {
+      "id": "p3",
+      "phrase": "social media",
+      "definition_tw": "社群媒體",
+      "sentence_en": "Many teenagers use social media to share their daily lives.",
+      "sentence_tw": "許多青少年使用社群媒體來分享他們的日常生活。",
+      "analysis": "如 Instagram、Facebook、YouTube 等網路平台。"
+    },
+    {
+      "id": "p4",
+      "phrase": "social chat",
+      "definition_tw": "社交聊天",
+      "sentence_en": "They enjoyed a brief social chat before the meeting started.",
+      "sentence_tw": "他們在會議開始前進行了短暫的社交聊天。",
+      "analysis": "輕鬆寒暄的社交性談話。"
+    },
+    {
+      "id": "p5",
+      "phrase": "social break",
+      "definition_tw": "社交喘息時間",
+      "sentence_en": "Taking a short social break helps workers recharge their minds.",
+      "sentence_tw": "進行短暫的社交喘息有助於上班族補充心靈能量。",
+      "analysis": "自工作或高壓社交中暫時離線休息。"
+    },
+    {
+      "id": "p6",
+      "phrase": "quick thinking",
+      "definition_tw": "敏捷的思考",
+      "sentence_en": "Her quick thinking saved the child from the sudden accident.",
+      "sentence_tw": "她敏捷的思考反應救了孩子免於突發事故。",
+      "analysis": "臨危不亂、迅速反應的能力。"
+    },
+    {
+      "id": "p7",
+      "phrase": "part of...",
+      "definition_tw": "……的一部分",
+      "sentence_en": "Practice is an essential part of learning a language.",
+      "sentence_tw": "練習是學習語言不可或缺的一部分。",
+      "analysis": "表達整體中的某個構成要素。"
+    },
+    {
+      "id": "p8",
+      "phrase": "a new lease on life",
+      "definition_tw": "重獲新生；煥然一新",
+      "sentence_en": "The repaired old car got a new lease on life.",
+      "sentence_tw": "修復後的舊車重獲新生。",
+      "analysis": "比喻經過改善後煥發活力。"
+    },
+    {
+      "id": "p9",
+      "phrase": "give (something) one's best shot",
+      "definition_tw": "盡最大努力；全力以赴",
+      "sentence_en": "Although the exam is tough, I will give it my best shot.",
+      "sentence_tw": "雖然考試很艱難，我還是會全力以赴。",
+      "analysis": "拿出最佳表現奮力一試。"
+    },
+    {
+      "id": "p10",
+      "phrase": "toss out / throw away",
+      "definition_tw": "丟棄；扔掉",
+      "sentence_en": "Don't toss out useful old books; donate them instead.",
+      "sentence_tw": "不要丟棄有用的舊書，把 Ignore 它們捐出去吧。",
+      "analysis": "將無用之物拋棄扔掉。"
+    },
+    {
+      "id": "p11",
+      "phrase": "end up in...",
+      "definition_tw": "最終落得……（的處境／地方）",
+      "sentence_en": "Plastic waste often ends up in the ocean.",
+      "sentence_tw": "塑膠垃圾最終常落得流入海洋的下場。",
+      "analysis": "強調歷經過程後的最終結局。"
+    },
+    {
+      "id": "p12",
+      "phrase": "instead of...",
+      "definition_tw": "代替……；而不是……",
+      "sentence_en": "We walked to school instead of taking the bus.",
+      "sentence_tw": "我們走路去學校，而不是搭公車。",
+      "analysis": "介系詞，後面接名詞或 V-ing。"
+    },
+    {
+      "id": "p13",
+      "phrase": "make a difference",
+      "definition_tw": "產生影響；起作用",
+      "sentence_en": "Your act of kindness can make a huge difference.",
+      "sentence_tw": "你的善行可以產生巨大的影響。",
+      "analysis": "帶來實質的改變與效益。"
+    },
+    {
+      "id": "p14",
+      "phrase": "from a distance",
+      "definition_tw": "從遠處",
+      "sentence_en": "The mountains look majestic from a distance.",
+      "sentence_tw": "群山從遠處看顯得十分雄偉。",
+      "analysis": "保持距離觀看或遠觀。"
+    },
+    {
+      "id": "p15",
+      "phrase": "open up",
+      "definition_tw": "打開；展開（可能性）",
+      "sentence_en": "Learning English opens up many career opportunities.",
+      "sentence_tw": "學習英文能為職涯展開許多可能性。",
+      "analysis": "開放機會、敞開心扉或開發區域。"
+    },
+    {
+      "id": "p16",
+      "phrase": "in person",
+      "definition_tw": "親自；當面",
+      "sentence_en": "I prefer to talk to my clients in person.",
+      "sentence_tw": "我傾向於當面與我的客戶談話。",
+      "analysis": "與遠距或線上相對，強調本人出席。"
+    },
+    {
+      "id": "p17",
+      "phrase": "a fraction of...",
+      "definition_tw": "一小部分……；極少的……",
+      "sentence_en": "He bought the jacket at a fraction of its original price.",
+      "sentence_tw": "他以原本極小一部分的價格買下了這件夾克。",
+      "analysis": "形容極低的比例或花費。"
+    },
+    {
+      "id": "p18",
+      "phrase": "make a trip to...",
+      "definition_tw": "往返……；前往……",
+      "sentence_en": "We made a trip to Tainan during the long weekend.",
+      "sentence_tw": "我們在連假期間前往台南一遊。",
+      "analysis": "出發前往某地進行短程旅行。"
+    },
+    {
+      "id": "p19",
+      "phrase": "grab drinks / snacks",
+      "definition_tw": "隨手買/快速吃點心或飲料",
+      "sentence_en": "Let's grab a quick drink after work.",
+      "sentence_tw": "下班後我們去隨手買一杯飲料喝吧。",
+      "analysis": "口語美語，指方便快速購買飲食。"
+    },
+    {
+      "id": "p20",
+      "phrase": "take home",
+      "definition_tw": "帶回家；帶走（如：帶紀念品）",
+      "sentence_en": "Visitors can take home unique souvenirs from the market.",
+      "sentence_tw": "遊客可以從市集帶走獨特的紀念品回家。",
+      "analysis": "將旅行禮品或餐點攜回。"
+    },
+    {
+      "id": "p21",
+      "phrase": "think about...",
+      "definition_tw": "想到、考慮（某人/某事）",
+      "sentence_en": "You should carefully think about your future choices.",
+      "sentence_tw": "你應該仔細考慮你未來的選擇。",
+      "analysis": "針對特定議題思考評估。"
+    },
+    {
+      "id": "p22",
+      "phrase": "step into...",
+      "definition_tw": "踏入、走進（某處）",
+      "sentence_en": "Stepping into the old library feels like traveling back in time.",
+      "sentence_tw": "踏入這座老圖書館感覺就像穿越時空。",
+      "analysis": "進入某空間或涉足某領域。"
+    },
+    {
+      "id": "p23",
+      "phrase": "swing into action",
+      "definition_tw": "快速展開行動；投入行動",
+      "sentence_en": "The medical team swung into action as soon as the patient arrived.",
+      "sentence_tw": "病人一抵達，醫療團隊立刻快速展開行動。",
+      "analysis": "毫不拖延，迅速進入高效率狀態。"
+    },
+    {
+      "id": "p24",
+      "phrase": "save the day",
+      "definition_tw": "挽救局勢、轉危為安",
+      "sentence_en": "His brilliant suggestion saved the day for our project.",
+      "sentence_tw": "他極佳的建議讓我們的專案轉危為安。",
+      "analysis": "在關鍵時刻化解危機。"
+    },
+    {
+      "id": "p25",
+      "phrase": "be best known for...",
+      "definition_tw": "以……最為人熟知 / 出名",
+      "sentence_en": "Tainan is best known for its rich history and delicious street food.",
+      "sentence_tw": "台南以其豐富的歷史和美味的小吃最為人熟知。",
+      "analysis": "因特定特徵或特產遠近馳名。"
+    },
+    {
+      "id": "p26",
+      "phrase": "sign up for...",
+      "definition_tw": "報名參加……",
+      "sentence_en": "Many students signed up for the weekend coding workshop.",
+      "sentence_tw": "許多學生報名參加了週末的程式設計工作坊。",
+      "analysis": "登記報名課程或活動。"
+    },
+    {
+      "id": "p27",
+      "phrase": "try out for...",
+      "definition_tw": "參加……的選拔或試鏡",
+      "sentence_en": "She decided to try out for the school basketball team.",
+      "sentence_tw": "她決定參加學校籃球隊的選拔。",
+      "analysis": "爭取球隊、劇組或團體的席次選拔。"
+    },
+    {
+      "id": "p28",
+      "phrase": "big break",
+      "definition_tw": "大好機會；突破性的轉機",
+      "sentence_en": "Winning the singing competition was her big break in showbiz.",
+      "sentence_tw": "赢得歌唱比賽是她在演藝圈的大好轉機。",
+      "analysis": "職涯或人生轉折的關鍵重大契機。"
+    },
+    {
+      "id": "p29",
+      "phrase": "dream come true",
+      "definition_tw": "夢想成真",
+      "sentence_en": "Visiting Tokyo was a dream come true for the young girl.",
+      "sentence_tw": "造訪東京對這位年輕女孩來說是夢想成真。",
+      "analysis": "盼望已久的願望實現。"
+    },
+    {
+      "id": "p30",
+      "phrase": "bucket list",
+      "definition_tw": "人生願望清單",
+      "sentence_en": "Skydiving is on top of his bucket list.",
+      "sentence_tw": "高空跳傘位於他人升願望清單的頂端。",
+      "analysis": "有生之年期望完成的清單。"
+    },
+    {
+      "id": "p31",
+      "phrase": "the time of one's life",
+      "definition_tw": "人生中最快樂的時光",
+      "sentence_en": "We had the time of our lives during the graduation trip.",
+      "sentence_tw": "我們在畢業旅行中度過了人生中最快樂的時光。",
+      "analysis": "形容極度盡興、美好的回憶時光。"
+    },
+    {
+      "id": "p32",
+      "phrase": "all else being equal",
+      "definition_tw": "在其他條件相同的情況下",
+      "sentence_en": "All else being equal, voters tend to choose the more experienced candidate.",
+      "sentence_tw": "在其他條件相同的情況下，選民傾向選擇經驗豐富的候選人。",
+      "analysis": "邏輯推論前提條件。"
+    },
+    {
+      "id": "p33",
+      "phrase": "fall for...",
+      "definition_tw": "上當；被……欺騙",
+      "sentence_en": "Don't fall for internet scams that promise quick money.",
+      "sentence_tw": "不要上那些承諾快速賺錢的網路詐騙的當。",
+      "analysis": "輕信謊言或陷阱而上當。"
+    },
+    {
+      "id": "p34",
+      "phrase": "take a shortcut",
+      "definition_tw": "走捷徑",
+      "sentence_en": "There is no shortcut to success in learning English.",
+      "sentence_tw": "學習英文走向成功沒有捷徑可走。",
+      "analysis": "尋求快速途徑或投機做法。"
+    },
+    {
+      "id": "p35",
+      "phrase": "give up on...",
+      "definition_tw": "放棄……",
+      "sentence_en": "Never give up on your dreams, no matter how tough it gets.",
+      "sentence_tw": "無論變得多艱難，永遠不要放棄你的夢想。",
+      "analysis": "對人或夢想失去信心而放棄。"
+    },
+    {
+      "id": "p36",
+      "phrase": "net zero",
+      "definition_tw": "淨零（排放）",
+      "sentence_en": "Many nations are aiming to achieve net zero carbon emissions by 2050.",
+      "sentence_tw": "許多國家目標在 2050 年前實現碳淨零排放。",
+      "analysis": "溫室氣體排放與抵銷平衡。"
+    },
+    {
+      "id": "p37",
+      "phrase": "third party",
+      "definition_tw": "第三方",
+      "sentence_en": "The survey was conducted by an independent third party.",
+      "sentence_tw": "這項調查是由獨立的第三方進行的。",
+      "analysis": "兩造合約外的中立參與者。"
+    },
+    {
+      "id": "p38",
+      "phrase": "align with...",
+      "definition_tw": "與……保持一致；符合（法規等）",
+      "sentence_en": "Your actions should align with your personal values.",
+      "sentence_tw": "你的行為應該與你的個人價值觀保持一致。",
+      "analysis": "立場、目標或規範相互吻合。"
+    }
+  ],
+  "patterns": []
+}
