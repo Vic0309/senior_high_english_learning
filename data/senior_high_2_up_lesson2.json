@@ -1,0 +1,306 @@
+{
+  "lesson_id": "B1L2",
+  "lesson_title": "Senior High English Book 1 Lesson 2",
+  "words": [
+    {
+      "id": "w1",
+      "word": "innovative",
+      "pos": "adj.",
+      "kk": "[ˈɪnəˌvetɪv]",
+      "definition_en": "featuring new methods, ideas, or products; advanced and original.",
+      "definition_tw": "創新的",
+      "collocations": ["take an innovative approach（採用創新的做法）"],
+      "related_words": [
+        "innovate (vi.) 創新",
+        "innovation (n. [C, U]) 新方法/創新"
+      ],
+      "sentence_en": "The team decided to take an innovative approach to solving the problem.",
+      "sentence_tw": "該團隊決定採用創新的方法來解決這個問題。",
+      "analysis": "形容詞表示具有創新思維或突破性做法的。動詞為 innovate，名詞為 innovation。",
+      "timing": "討論科技突破、產品設計、教學方法或創業思維時。"
+    },
+    {
+      "id": "w2",
+      "word": "promise",
+      "pos": "vt. / vi. / n. [C]",
+      "kk": "[ˈprɑmɪs]",
+      "definition_en": "to tell someone that you will certainly do much or something; a declaration that one will do something.",
+      "definition_tw": "預示；承諾 / 承諾",
+      "patterns": ["promise to V（承諾要做某事）"],
+      "phrases": ["make a promise（許下承諾）"],
+      "sentence_en": "The dark clouds promise rain later in the afternoon.",
+      "sentence_tw": "烏雲預示著午後將會下雨。",
+      "analysis": "作動詞時除表「許諾」，還可表「有……的希望/預示」；作名詞時常用 make a promise。",
+      "timing": "表達誠信誓言、約定，或說明某事預示著某種發展結果時。"
+    },
+    {
+      "id": "w3",
+      "word": "material",
+      "pos": "n. [C, U]",
+      "kk": "[məˈtɪriəl]",
+      "definition_en": "the matter from which a thing is or can be made.",
+      "definition_tw": "材料",
+      "comparison": "material（物品/建造材料） vs. ingredient（食物食材）",
+      "sentence_en": "Wood is a traditional material used to construct houses.",
+      "sentence_tw": "木頭是用來建造房屋的傳統材料。",
+      "analysis": "泛指工業、建造或手作所使用的物理原料，與食物調味的食材（ingredient）不同。",
+      "timing": "說明產品成分、建築原料、手作材料或作文寫作素材時。"
+    },
+    {
+      "id": "w4",
+      "word": "structure",
+      "pos": "n. [C, U]",
+      "kk": "[ˈstrʌktʃɚ]",
+      "definition_en": "a building or other object constructed from several parts.",
+      "definition_tw": "結構體；建築物",
+      "sentence_en": "The engineers tested the stability of the tall structure.",
+      "sentence_tw": "工程師們測試了這座高大結構體的穩定性。",
+      "analysis": "可指實體的建築結構或橋樑，也可比喻文章、組織或團隊的組織結構。",
+      "timing": "討論建築工程、組織架構、文章邏輯結構時。"
+    },
+    {
+      "id": "w5",
+      "word": "capable",
+      "pos": "adj.",
+      "kk": "[ˈkepəbl]",
+      "definition_en": "having the ability, fitness, or quality necessary to do or achieve a specified thing.",
+      "definition_tw": "有能力的；能夠……的",
+      "patterns": ["be capable of + N/V-ing（有能力做……）"],
+      "related_words": ["capability (n. [C, U]) 能力（如：beyond one's capabilities）"],
+      "sentence_en": "With proper training, you will be capable of leading this project.",
+      "sentence_tw": "經過適當的訓練，你將有能力領導這個專案。",
+      "analysis": "核心句型為 be capable of + N/V-ing，著重於個人潛能或客觀能力狀態。",
+      "timing": "描述人的潛力、職涯能力評估或機器設備的功能範圍時。"
+    },
+    {
+      "id": "w6",
+      "word": "collaborate",
+      "pos": "vi.",
+      "kk": "[kəˈlæbəˌret]",
+      "definition_en": "work jointly on an activity, especially to produce or create something.",
+      "definition_tw": "合作",
+      "collocations": ["collaborate with sb. for/on sth.（與某人合作某事）"],
+      "related_words": ["collaboration (n. [C, U]) 合作（如：in close collaboration with...）"],
+      "sentence_en": "Scientists from different countries collaborated to develop the new medicine.",
+      "sentence_tw": "來自不同國家的科學家合作開發這種新藥。",
+      "analysis": "強調雙方或多方攜手並肩完成共同目標。名詞為 collaboration。",
+      "timing": "討論團隊合作、跨國專案、跨界聯名（Co-branding）時。"
+    },
+    {
+      "id": "w7",
+      "word": "construct",
+      "pos": "vt.",
+      "kk": "[kənˈstrʌkt]",
+      "definition_en": "build or erect something typically large such as a building, road, or machine.",
+      "definition_tw": "建造",
+      "phrases": ["under construction 建造中"],
+      "related_words": [
+        "construction (n. [U, C]) 建造/建築物",
+        "constructive (adj.) 有建設性的（如：constructive feedback）"
+      ],
+      "sentence_en": "It took several months to construct the bridge.",
+      "sentence_tw": "建造這座橋花了數月的時間。",
+      "analysis": "較 make/build 更具正式感與規模感。衍生形容詞 constructive 表有建設性的。",
+      "timing": "描述工程施工、建造大樓或比喻建立理論/觀點時。"
+    },
+    {
+      "id": "w8",
+      "word": "rank",
+      "pos": "vt. / vi. / n. [C]",
+      "kk": "[ræŋk]",
+      "definition_en": "give (someone or something) a specified rank or place within a grading system.",
+      "definition_tw": "排序為…… / 排名",
+      "related_words": ["ranking (n. [C]) 排名"],
+      "sentence_en": "The university is ranked among the top ten in the world.",
+      "sentence_tw": "這所大學名列世界前十名之一。",
+      "analysis": "可作動詞評定名次，也可作名詞指階級、名次。名詞 ranking 常指排行榜。",
+      "timing": "討論競賽名次、學校與企業排行榜或地位階級時。"
+    },
+    {
+      "id": "w9",
+      "word": "adjust",
+      "pos": "vt. / vi.",
+      "kk": "[əˈdʒʌst]",
+      "definition_en": "alter or move (something) slightly in order to achieve the desired fit, appearance, or result.",
+      "definition_tw": "調整；適應",
+      "phrases": ["make adjustments 做調整"],
+      "related_words": ["adjustment (n. [C, U]) 調整"],
+      "sentence_en": "It takes time to adjust to living in a new city.",
+      "sentence_tw": "適應新城市的日常生活需要時間。",
+      "analysis": "作及物動詞指調整微調；作不及物動詞搭配 adjust to + N/V-ing 表適應新環境。",
+      "timing": "描繪新環境適應、調整計畫策略或微調設備參數時。"
+    },
+    {
+      "id": "w10",
+      "word": "rely",
+      "pos": "vi.",
+      "kk": "[rɪˈlaɪ]",
+      "definition_en": "depend on with full trust or confidence.",
+      "definition_tw": "依賴；信任",
+      "patterns": ["rely on/upon...（依賴/仰賴……）"],
+      "related_words": ["reliable (adj.) 可信賴的"],
+      "sentence_en": "You can always rely on your best friends when you are in trouble.",
+      "sentence_tw": "當你遇到困難時，你總是能倚靠你最好的朋友。",
+      "analysis": "極高頻動詞，核心句型為 rely on/upon。衍生形容詞為 reliable（可靠的）。",
+      "timing": "討論團隊互信、依賴科技/數據或指靠某人協助時。"
+    },
+    {
+      "id": "w11",
+      "word": "feedback",
+      "pos": "n. [U]",
+      "kk": "[ˈfidˌbæk]",
+      "definition_en": "information about reactions to a product, a person's performance of a task, etc.",
+      "definition_tw": "回饋意見",
+      "sentence_en": "We received valuable feedback from our customers regarding the new product.",
+      "sentence_tw": "我們從顧客那裡獲得了關於新產品的寶貴回饋意見。",
+      "analysis": "不可數名詞，指針對表現、服務或產品所提供的反饋建言。",
+      "timing": "作文撰寫檢討反省、產品測試或課堂檢討時。"
+    },
+    {
+      "id": "w12",
+      "word": "element",
+      "pos": "n. [C]",
+      "kk": "[ˈɛləmənt]",
+      "definition_en": "an essential or characteristic part of something abstract.",
+      "definition_tw": "要素；元素",
+      "related_words": ["elementary (adj.) 基礎的"],
+      "sentence_en": "Trust is a key element in any successful relationship.",
+      "sentence_tw": "信任是任何成功關係中的關鍵要素。",
+      "analysis": "指構成整體不可或缺的成分或要素。衍生形容詞 elementary 為小學的/基礎的。",
+      "timing": "分析成功因素、化學元素或討論故事構詞要素時。"
+    },
+    {
+      "id": "w13",
+      "word": "stability",
+      "pos": "n. [U]",
+      "kk": "[stəˈbɪləti]",
+      "definition_en": "the state of being stable.",
+      "definition_tw": "穩定",
+      "related_words": ["stable (adj.) 穩定的"],
+      "sentence_en": "Political stability is crucial for economic development.",
+      "sentence_tw": "政治穩定對經濟發展至關重要。",
+      "analysis": "不可數名詞，指結構、情緒、局勢或經濟上的安定狀態。形容詞為 stable。",
+      "timing": "討論社會經濟局勢、建築平衡或心理情緒控制時。"
+    },
+    {
+      "id": "w14",
+      "word": "route",
+      "pos": "n. [C]",
+      "kk": "[rut]",
+      "definition_en": "a way or course taken in getting from a starting point to a destination.",
+      "definition_tw": "途徑；路線",
+      "collocations": ["route to + N/V-ing（通往……的途徑）"],
+      "sentence_en": "Hard work is the most reliable route to success.",
+      "sentence_tw": "努力工作是通往成功最可靠的途徑。",
+      "analysis": "可指具體的導航/交通路線，也可比喻通往特定目標的抽象途徑。",
+      "timing": "描繪旅行路線規劃，或比喻達到目標的必經之路時。"
+    },
+    {
+      "id": "w15",
+      "word": "explore",
+      "pos": "vt. / vi.",
+      "kk": "[ɪkˈsplɔr]",
+      "definition_en": "travel through an unfamiliar area in order to learn about it; inquire into or discuss in detail.",
+      "definition_tw": "探索",
+      "related_words": ["exploration (n. [U, C]) 探索；探求"],
+      "sentence_en": "The students were encouraged to explore different possibilities.",
+      "sentence_tw": "學生們被鼓勵去探索不同的可能性。",
+      "analysis": "既指實地考察未知的地理區域，也指深入研究課題或探索可能性。名詞為 exploration。",
+      "timing": "討論職涯探索、戶外冒險探險或科學研究時。"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "p1",
+      "phrase": "trial and error",
+      "definition_tw": "反覆試驗；嘗試錯誤",
+      "sentence_en": "The team relied on trial and error to see what worked best.",
+      "sentence_tw": "該團隊依靠反覆試驗來找出最佳方案。",
+      "analysis": "指在沒有既定答案時，透過不斷實作、犯錯並修正來尋求解答的過程。"
+    },
+    {
+      "id": "p2",
+      "phrase": "in charge (of)",
+      "definition_tw": "主控；負責",
+      "sentence_en": "They don't waste time deciding who is in charge.",
+      "sentence_tw": "他們不會浪費時間討論誰該做主負責。",
+      "analysis": "指掌控局勢或總管某項業務/專案。主詞為人時用 operate in charge of sth.。"
+    },
+    {
+      "id": "p3",
+      "phrase": "figure out",
+      "definition_tw": "想出；弄清楚",
+      "sentence_en": "They focus on working together to figure out how to build the structure.",
+      "sentence_tw": "他們專注於合作想出如何搭建這個結構。",
+      "analysis": "指經過思考、分析或討論後理解並解決了某個難題。"
+    },
+    {
+      "id": "p4",
+      "phrase": "roll up one's sleeves",
+      "definition_tw": "挽起袖子（準備開始幹活/行動）",
+      "sentence_en": "In order to solve problems, we must roll up our sleeves.",
+      "sentence_tw": "為了要解決問題，我們必須挽起袖子準備動手幹活。",
+      "analysis": "生動的比喻片語，強調實事求是、積極投入實作行動。"
+    },
+    {
+      "id": "p5",
+      "phrase": "get down to + N/V-ing",
+      "definition_tw": "開始認真做某事",
+      "sentence_en": "Let's stop chatting and get down to work right away.",
+      "sentence_tw": "我們別再聊天了，馬上開始認真工作吧。",
+      "analysis": "介系詞 to 後面必須接名詞或動名詞 (V-ing)，強調收心專注於工作或課題。"
+    },
+    {
+      "id": "p6",
+      "phrase": "move on (to...)",
+      "definition_tw": "轉移 / 進展到（下一件事）",
+      "sentence_en": "After finishing the first section, we can move on to the next topic.",
+      "sentence_tw": "在完成第一部分後，我們可以進展到下一個主題。",
+      "analysis": "指結束當前階段，往前推進到下一個任務或階段。"
+    },
+    {
+      "id": "p7",
+      "phrase": "as expected",
+      "definition_tw": "正如預期",
+      "sentence_en": "The innovative plan worked smoothly, just as expected.",
+      "sentence_tw": "這個創新的計畫運作得很順利，正如預料的一樣。",
+      "analysis": "常用於句首或句尾，說明發展結果與預先想的一致。"
+    },
+    {
+      "id": "p8",
+      "phrase": "on the other hand",
+      "definition_tw": "另一方面",
+      "sentence_en": "Online learning is convenient; on the other hand, it requires high self-discipline.",
+      "sentence_tw": "線上學習很方便；但另一方面，它需要高度的自律。",
+      "analysis": "用來引導對比觀點或另一側面的論述，常與 On the one hand... 搭配使用。"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "g1",
+      "title": "句型 1：not ... until ...（直到……才……）",
+      "structure": "S + V (否定式) ... until + N / S + V",
+      "explanation": "until 後面接時間點或子句，表示「直到該時間或事件發生之前，主句動作均未發生/被暫緩」，中文習慣翻譯為「直到……才……」。",
+      "sentence_en": "Adults usually don't start putting the structure together until they have spent most of the time planning.",
+      "sentence_tw": "大人通常要到花了大部分時間做計畫後，才開始動手組裝結構。",
+      "examples": [
+        "I did not get home until midnight.",
+        "People do not realize the importance of good health until they become sick."
+      ]
+    },
+    {
+      "id": "g2",
+      "title": "句型 2：比較代名詞 that / those 代替重複的名詞",
+      "structure": "單數：A + be + 比較級 + than + that of B | 複數：A + be + 比較級 + than + those of B",
+      "explanation": "在進行兩者比較時，為了避免重複前面出現過的名詞，單數或不可數名詞用 that 代替，複數名詞則用 those 代替。",
+      "sentence_en": "They had structures that were taller than those of most adult teams.",
+      "sentence_tw": "他們的結構比大多數成年人團隊的（結構）還要高。",
+      "examples": [
+        "The weather in Canada is similar to that in Sweden.",
+        "The population of Taipei is much larger than that of Hualien.",
+        "The apartments downtown are more expensive than those in the suburbs.",
+        "In South Korea, smokers' life expectancy is about 8 years shorter than that of non-smokers."
+      ]
+    }
+  ]
+}
