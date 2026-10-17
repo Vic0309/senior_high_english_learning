@@ -1,0 +1,372 @@
+{
+  "lesson_id": "B1L1",
+  "lesson_title": "Senior High English Book 1 Lesson 1",
+  "words": [
+    {
+      "id": "w1",
+      "word": "employ",
+      "pos": "vt.",
+      "kk": "[ɪmˈplɔɪ]",
+      "definition_en": "to give work to someone and pay them for it.",
+      "definition_tw": "僱用",
+      "synonyms": [],
+      "collocations": ["employ sb. to VR（僱用某人做某事）"],
+      "related_words": [
+        "employer (n. [C]) 雇主",
+        "employee (n. [C]) 員工",
+        "unemployment (n. [U]) 失業"
+      ],
+      "sentence_en": "The company plans to employ more workers next year.",
+      "sentence_tw": "這家公司計畫明年僱用更多工人。",
+      "analysis": "動詞表示僱用，衍生詞包含 employer（雇主）、employee（員工）與 unemployment（失業）。",
+      "timing": "討論職場、就業機會、公司營運或招募員工時使用。"
+    },
+    {
+      "id": "w2",
+      "word": "corporation",
+      "pos": "n. [C]",
+      "kk": "[ˌkɔrpəˈreʃən]",
+      "definition_en": "a large company or group of companies acting together as a single organization.",
+      "definition_tw": "大公司；集團公司",
+      "synonyms": [],
+      "collocations": [],
+      "related_words": ["corporate (adj.) 公司的"],
+      "sentence_en": "She works as a manager in a multinational corporation.",
+      "sentence_tw": "她在一家跨國企業擔任經理。",
+      "analysis": "通常指規模龐大的企業集團或股份有限公司。形容詞為 corporate。",
+      "timing": "談論商業經濟、大型企業或職場環境時。"
+    },
+    {
+      "id": "w3",
+      "word": "suffer",
+      "pos": "vi. / vt.",
+      "kk": "[ˈsʌfɚ]",
+      "definition_en": "to experience or be affected by something bad, such as pain, illness, or sadness.",
+      "definition_tw": "受苦；遭受",
+      "synonyms": [],
+      "collocations": ["suffer from + 疾病/困難（患有⋯疾病/受⋯之苦）"],
+      "sentence_en": "Many elderly people suffer from chronic joint pain.",
+      "sentence_tw": "許多長者飽受慢性關節疼痛之苦。",
+      "analysis": "suffer from 後面常接具體的疾病、飢餓或困境，表示「遭受……之苦」。",
+      "timing": "描述病情、心理煎熬、天災人禍或痛苦經驗時。"
+    },
+    {
+      "id": "w4",
+      "word": "terminal",
+      "pos": "adj. / n. [C]",
+      "kk": "[ˈtɝmɪnl]",
+      "definition_en": "forming or situated at the end or extremity; incurable and leading to death.",
+      "definition_tw": "末期的；航廈",
+      "synonyms": [],
+      "collocations": ["terminal cancer/illness（癌症/疾病末期）"],
+      "sentence_en": "The airport's new terminal handles international flights.",
+      "sentence_tw": "機場的新航廈負責處理國際航班。",
+      "analysis": "當形容詞時可指末期的（絕症）；當名詞時可指交通終點站或機場航廈。",
+      "timing": "談論醫療重症議題或搭機旅遊時。"
+    },
+    {
+      "id": "w5",
+      "word": "illness",
+      "pos": "n. [C, U]",
+      "kk": "[ˈɪlnɪs]",
+      "definition_en": "a disease or period of sickness affecting the body or mind.",
+      "definition_tw": "疾病",
+      "synonyms": ["disease", "sickness"],
+      "collocations": ["fall ill（生病）"],
+      "sentence_en": "He had to stay home from school due to a sudden illness.",
+      "sentence_tw": "由於突發疾病，他不得不請假留在家裡。",
+      "analysis": "泛指身體或心理的生病狀態。動詞片語 fall ill 表示「生病、得病」。",
+      "timing": "談論健康狀況、醫療保健或請假原因時。"
+    },
+    {
+      "id": "w6",
+      "word": "tremendously",
+      "pos": "adv.",
+      "kk": "[trəˈmɛndəsli]",
+      "definition_en": "to a great extent; extremely or enormously.",
+      "definition_tw": "極大地；極其",
+      "synonyms": ["greatly", "extremely", "hugely"],
+      "collocations": [],
+      "related_words": ["tremendous (adj.) 相當大的；極大的"],
+      "sentence_en": "Her support helped me tremendously during difficult times.",
+      "sentence_tw": "在艱難的時期，她的支持對我幫助極大。",
+      "analysis": "副詞修飾動詞或形容詞，表示程度非常深。形容詞為 tremendous。",
+      "timing": "誇飾程度、強調感謝或描述巨大轉變時。"
+    },
+    {
+      "id": "w7",
+      "word": "laughter",
+      "pos": "n. [U]",
+      "kk": "[ˈlæftɚ]",
+      "definition_en": "the action or sound of laughing.",
+      "definition_tw": "笑聲",
+      "synonyms": [],
+      "collocations": [
+        "burst into laughter（突發大笑）",
+        "roar with laughter（大笑/仰天長笑）"
+      ],
+      "sentence_en": "The comedian's joke filled the room with laughter.",
+      "sentence_tw": "喜劇演員的笑話讓整個房間充滿了笑聲。",
+      "analysis": "不可數名詞，專指笑聲或笑的行為。常搭配 burst into 或 roar with 等動詞片語。",
+      "timing": "描述歡樂氣氛、喜劇效果或社交互動時。"
+    },
+    {
+      "id": "w8",
+      "word": "frighten",
+      "pos": "vt.",
+      "kk": "[ˈfraɪtn]",
+      "definition_en": "make (someone) afraid or anxious.",
+      "definition_tw": "使害怕；嚇唬",
+      "synonyms": [],
+      "collocations": ["frighten sb. to death（把某人嚇得要死）"],
+      "related_words": ["fright (n. [U]) 驚嚇"],
+      "sentence_en": "Loud thunder can easily frighten small children.",
+      "sentence_tw": "巨大的雷聲很容易嚇到小孩子。",
+      "analysis": "指讓某人產生驚嚇或恐懼感。常見誇飾用語 frighten sb. to death（嚇死某人）。",
+      "timing": "描述恐怖經驗、驚嚇反應或緊張情境時。"
+    },
+    {
+      "id": "w9",
+      "word": "contact",
+      "pos": "n. [U] / vt.",
+      "kk": "[ˈkɑntækt]",
+      "definition_en": "the state or condition of physical touching or communicating; to communicate with.",
+      "definition_tw": "接觸；聯絡 / 聯絡",
+      "synonyms": [],
+      "collocations": [
+        "come into contact with...（接觸到⋯）",
+        "keep in contact with...（與⋯保持聯絡）"
+      ],
+      "sentence_en": "It is important to keep in contact with old friends.",
+      "sentence_tw": "與老朋友保持聯絡是很重要的。",
+      "analysis": "既可作名詞（接觸/人脈），也可作動詞（聯繫某人）。",
+      "timing": "討論人際關係、通訊方式或衛生防疫（接觸史）時。"
+    },
+    {
+      "id": "w10",
+      "word": "germ",
+      "pos": "n. [C]",
+      "kk": "[dʒɝm]",
+      "definition_en": "a microorganism, especially one that causes disease.",
+      "definition_tw": "細菌；病菌",
+      "synonyms": ["bacterium", "microbe"],
+      "collocations": [],
+      "sentence_en": "Wash your hands frequently to prevent germs from spreading.",
+      "sentence_tw": "經常洗手以防止病菌傳播。",
+      "analysis": "可數名詞，通常用複數形 germs 指肉眼看不見的致病細菌或病毒。",
+      "timing": "衛生教育、提醒洗手防病或談論健康習慣時。"
+    },
+    {
+      "id": "w11",
+      "word": "warmth",
+      "pos": "n. [U]",
+      "kk": "[wɔrmθ]",
+      "definition_en": "the state or quality of being warm; enthusiasm and affection.",
+      "definition_tw": "溫暖；熱情",
+      "synonyms": [],
+      "collocations": [],
+      "sentence_en": "She felt the warmth of the sun on her face.",
+      "sentence_tw": "她感受到陽光灑在臉上的溫暖。",
+      "analysis": "不可數名詞，除了指物理上的溫度溫暖，也常用來形容人際間的情感熱情。",
+      "timing": "形容天氣、房間溫度，或稱讚某人待人親切熱情時。"
+    },
+    {
+      "id": "w12",
+      "word": "frail",
+      "pos": "adj.",
+      "kk": "[frel]",
+      "definition_en": "(of a person) weak and delicate; physically weak.",
+      "definition_tw": "虛弱的；脆弱的",
+      "synonyms": ["weak", "fragile"],
+      "collocations": [],
+      "sentence_en": "Despite his frail health, he still works hard every day.",
+      "sentence_tw": "儘管身體虛弱，他每天仍然努力工作。",
+      "analysis": "形容人體弱多病、衰老虛弱，或指物品脆弱易碎。",
+      "timing": "描述老人體態、病人狀況或脆弱易壞的事物時。"
+    },
+    {
+      "id": "w13",
+      "word": "prompt",
+      "pos": "vt. / adj.",
+      "kk": "[prɑmpt]",
+      "definition_en": "to encourage someone to take action; done without delay.",
+      "definition_tw": "促使；引起 / 立即的",
+      "synonyms": [],
+      "collocations": ["prompt sb. to VR（促使某人做某事）"],
+      "sentence_en": "His kind words prompted me to keep trying.",
+      "sentence_tw": "他溫暖的話語促使我繼續嘗試。",
+      "analysis": "作動詞時常搭配 prompt sb. to V；作形容詞時指迅速、即時的（prompt reply）。",
+      "timing": "描述動機、激勵原因或要求即時回應時。"
+    },
+    {
+      "id": "w14",
+      "word": "confine",
+      "pos": "vt.",
+      "kk": "[kənˈfaɪn]",
+      "definition_en": "keep or restrict someone or something within certain limits.",
+      "definition_tw": "使受限於；限制",
+      "synonyms": [],
+      "collocations": ["be confined to + N/地點（被限制在⋯/臥病在床上）"],
+      "sentence_en": "Due to a severe injury, he was confined to bed for weeks.",
+      "sentence_tw": "由於嚴重的受傷，他臥病在床數週。",
+      "analysis": "常以被動語態 be confined to 出現，表示被侷限在某個空間、狀況或病榻上。",
+      "timing": "描述行動受限、病情嚴重臥床或活動範圍受規範時。"
+    },
+    {
+      "id": "w15",
+      "word": "sparkle",
+      "pos": "n. [C] / vi.",
+      "kk": "[ˈspɑrkl]",
+      "definition_en": "shine brightly with flashes of light; a small flash of light.",
+      "definition_tw": "光芒；火花 / 閃耀",
+      "synonyms": [],
+      "collocations": [],
+      "sentence_en": "The stars began to sparkle in the clear night sky.",
+      "sentence_tw": "星星在晴朗的夜空中開始閃爍。",
+      "analysis": "既可作動詞表閃耀，也可作名詞指閃光或眼中的神采、火花。",
+      "timing": "描繪夜景、珠寶光澤或眼睛充滿希望的光芒時。"
+    },
+    {
+      "id": "w16",
+      "word": "hug",
+      "pos": "n. [C] / vt.",
+      "kk": "[hʌɡ]",
+      "definition_en": "an act of squeezing someone tightly in one's arms, typically to express affection.",
+      "definition_tw": "擁抱",
+      "synonyms": [],
+      "collocations": ["give sb. a hug（給某人一個擁抱）"],
+      "sentence_en": "The little girl ran to her mother and gave her a warm hug.",
+      "sentence_tw": "小女孩跑向媽媽，給了他一個溫暖的擁抱。",
+      "analysis": "可數名詞與動詞同型。常用於表達安慰、喜悅或道別時的肢體接觸。",
+      "timing": "描述溫馨感人場景、安慰朋友或家人重逢時。"
+    },
+    {
+      "id": "w17",
+      "word": "drowsy",
+      "pos": "adj.",
+      "kk": "[ˈdraʊzi]",
+      "definition_en": "sleepy and lethargic; half asleep.",
+      "definition_tw": "昏昏欲睡的",
+      "synonyms": [],
+      "collocations": [],
+      "related_words": ["drowsiness (n. [U]) 睡意"],
+      "sentence_en": "The warm room made her feel very drowsy after lunch.",
+      "sentence_tw": "溫暖的房間讓她在午餐後感到非常昏昏欲睡。",
+      "analysis": "形容人因疲倦、藥物或環境而想睡覺。名詞為 drowsiness。",
+      "timing": "描述熬夜後、下午精神不濟或服藥後的狀態時。"
+    },
+    {
+      "id": "w18",
+      "word": "stretch",
+      "pos": "vt. / vi.",
+      "kk": "[strɛtʃ]",
+      "definition_en": "to straighten or extend one's body or a part of one's body to its full length.",
+      "definition_tw": "伸展；伸出",
+      "synonyms": [],
+      "collocations": ["stretch out one's arm(s)（伸出雙臂）"],
+      "sentence_en": "It is good practice to stretch before doing exercise.",
+      "sentence_tw": "運動前進行伸展是很好的習慣。",
+      "analysis": "指肌肉、肢體或物體的拉伸、伸展動作。",
+      "timing": "運動健身、剛睡醒伸懶腰或伸出雙手拿東西時。"
+    },
+    {
+      "id": "w19",
+      "word": "refuse",
+      "pos": "vt. / vi.",
+      "kk": "[rɪˈfjuz]",
+      "definition_en": "to indicate or show that one is not willing to do something.",
+      "definition_tw": "拒絕",
+      "synonyms": [],
+      "collocations": ["refuse to VR（拒絕做某事）"],
+      "related_words": ["refusal (n. [U, C]) 拒絕"],
+      "sentence_en": "He refused to give up despite the difficult circumstances.",
+      "sentence_tw": "儘管環境艱難，他仍拒絕放棄。",
+      "analysis": "核心用法為 refuse to V。名詞為 refusal。",
+      "timing": "拒絕不合理要求、堅持原則或談判破裂時。"
+    },
+    {
+      "id": "w20",
+      "word": "hesitate",
+      "pos": "vi.",
+      "kk": "[ˈhɛzəˌtet]",
+      "definition_en": "to pause before saying or doing something, often because of uncertainty.",
+      "definition_tw": "猶豫",
+      "synonyms": [],
+      "collocations": ["hesitate about/to VR（對⋯感到猶豫）"],
+      "related_words": ["hesitation (n. [U]) 猶豫"],
+      "sentence_en": "If you have any questions, please do not hesitate to ask.",
+      "sentence_tw": "如果你有任何問題，請毫不猶豫地提出來。",
+      "analysis": "常用於否定句中「do not hesitate to V」（儘管去做/毫不猶豫）。名詞為 hesitation。",
+      "timing": "鼓勵他人大膽發問、做決定前舉棋不定或感到困惑時。"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "p1",
+      "phrase": "pass on ... to ...",
+      "definition_tw": "將⋯傳給⋯",
+      "sentence_en": "She decided to pass on her skills to the younger generation.",
+      "sentence_tw": "她決定將自己的技能傳給年輕一代。",
+      "analysis": "指將物品、知識、訊息或傳統代代相傳或轉交給其他人。"
+    },
+    {
+      "id": "p2",
+      "phrase": "cheer ... up",
+      "definition_tw": "使⋯振作 / 高興起來",
+      "sentence_en": "We bought some flowers to cheer our sick friend up.",
+      "sentence_tw": "我們買了一些花來讓生病的朋友振作起來。",
+      "analysis": "可分開式片語（名詞放中間或後面皆可，代名詞只能放中間 cheer him up）。"
+    },
+    {
+      "id": "p3",
+      "phrase": "turn ... down",
+      "definition_tw": "拒絕（某人/請求）",
+      "sentence_en": "He had to turn down the job offer because of personal reasons.",
+      "sentence_tw": "由於個人原因，他不得不拒絕這份工作邀約。",
+      "analysis": "除了拒絕提議、請求或工作機會外，也可指將音量、火力調小（turn down the music）。"
+    },
+    {
+      "id": "p4",
+      "phrase": "be about to + VR",
+      "definition_tw": "正要；即將",
+      "sentence_en": "The train was about to leave when we finally reached the station.",
+      "sentence_tw": "當我們終於抵達車站時，火車正要開走。"
+    },
+    {
+      "id": "p5",
+      "phrase": "after all",
+      "definition_tw": "畢竟；終究",
+      "sentence_en": "Don't be too hard on him; he is only a child, after all.",
+      "sentence_tw": "對他不要太苛刻；畢竟他還只是個孩子。"
+    },
+    {
+      "id": "p6",
+      "phrase": "pass away",
+      "definition_tw": "過世",
+      "sentence_en": "His grandfather passed away peacefully at the age of ninety.",
+      "sentence_tw": "他的爺爺在九十歲時安詳過世。"
+    },
+    {
+      "id": "p7",
+      "phrase": "make a difference",
+      "definition_tw": "產生影響；改善情況",
+      "sentence_en": "Small daily habits can truly make a difference in your health.",
+      "sentence_tw": "每天的小習慣真的能對你的健康帶來改變。"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "g1",
+      "title": "句型：虛受詞 it 用法 (find / consider / feel / think + it + adj./N + to VR)",
+      "structure": "主詞 + 動詞 (find/consider/think/feel) + it + 形容詞/名詞 + to + 動詞原形 (若需指明對象可加 for + 人)",
+      "explanation": "此句型利用虛受詞 it 代表後面的真受詞（不定詞片語 to + VR），用以避免受詞太長而導致頭重腳輕。常見動詞包含 find, consider, think, feel 等。",
+      "sentence_en": "Many students find it challenging to learn a new language.",
+      "sentence_tw": "許多學生發現學習一門新語言具有挑戰性。",
+      "examples": [
+        "The teacher thinks it important for us to practice English every day.",
+        "She considers it her duty to help people in need.",
+        "I found it difficult to finish the report on time."
+      ]
+    }
+  ]
+}
