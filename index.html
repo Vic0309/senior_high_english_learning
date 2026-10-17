@@ -238,7 +238,7 @@
     }
   });
 
-  // 載入指定的 JSON 課文
+  // 載入指定的 JSON 課文 (同時支援單字與片語)
   async function loadSelectedLesson() {
     stopAutoPlay();
     const filePath = document.getElementById('lessonSelect').value;
@@ -246,8 +246,32 @@
       const res = await fetch(filePath);
       if (!res.ok) throw new Error(`無法讀取檔案 ${filePath} (HTTP ${res.status})`);
       const data = await res.json();
-      currentWords = data.words || [];
-      renderTable(data);
+      
+      // 【關鍵修復】將 words 與 phrases 整合到同一個播放清單中
+      const rawWords = (data.words || []).map(item => ({
+        ...item,
+        displayWord: item.word,
+        displaySub: `${item.pos || ''} ${item.kk || ''}`,
+        type: 'word'
+      }));
+
+      const rawPhrases = (data.phrases || []).map(item => ({
+        ...item,
+        displayWord: item.phrase,
+        displaySub: '片語 / Idiom',
+        definition_en: item.definition_en || '',
+        definition_tw: item.definition_tw,
+        sentence_en: item.sentence_en || '',
+        sentence_tw: item.sentence_tw || '',
+        analysis: item.analysis || '',
+        timing: item.timing || '',
+        type: 'phrase'
+      }));
+
+      // 合併單字與片語
+      currentWords = [...rawWords, ...rawPhrases];
+
+      renderTable();
       renderGrammar(data.patterns);
     } catch (error) {
       alert('載入課文失敗：請確認 data 資料夾與 JSON 檔案是否正確。');
@@ -255,27 +279,32 @@
     }
   }
 
-  // 渲染表格
-  function renderTable(data) {
+  // 渲染表格 (同時支援單字與片語欄位)
+  function renderTable() {
     const tbody = document.getElementById('tableBody');
+    if (currentWords.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 20px;">此課文目前沒有單字或片語資料</td></tr>';
+      return;
+    }
+
     tbody.innerHTML = currentWords.map((item, index) => `
       <tr id="row-${index}" onclick="playFromIndex(${index})" style="cursor: pointer;">
         <td><button class="audio-btn" onclick="event.stopPropagation(); playFromIndex(${index});">🔊</button></td>
         <td>
-          <strong>${item.word}</strong><br>
-          <small style="color: #666;">${item.pos || ''} ${item.kk || ''}</small>
+          <strong>${item.displayWord}</strong><br>
+          <small style="color: #666;">${item.displaySub}</small>
         </td>
         <td>
-          <div><strong>英：</strong>${item.definition_en}</div>
+          ${item.definition_en ? `<div><strong>英：</strong>${item.definition_en}</div>` : ''}
           <div style="color: #007aff; margin-top: 3px;"><strong>中：</strong>${item.definition_tw}</div>
         </td>
         <td>
-          <div>${item.sentence_en}</div>
-          <div style="color: #666; font-size: 0.9em; margin-top: 2px;">${item.sentence_tw}</div>
+          <div>${item.sentence_en || ''}</div>
+          <div style="color: #666; font-size: 0.9em; margin-top: 2px;">${item.sentence_tw || ''}</div>
         </td>
         <td style="font-size: 13.5px;">
-          <div><strong>解析：</strong>${item.analysis || ''}</div>
-          <div style="color: #d97706; margin-top: 3px;"><strong>時機：</strong>${item.timing || ''}</div>
+          ${item.analysis ? `<div><strong>解析：</strong>${item.analysis}</div>` : ''}
+          ${item.timing ? `<div style="color: #d97706; margin-top: 3px;"><strong>時機：</strong>${item.timing}</div>` : ''}
         </td>
       </tr>
     `).join('');
@@ -295,12 +324,12 @@
         <h4 style="color: #007aff; margin-bottom: 4px;">${p.title}</h4>
         <p style="margin: 2px 0;"><strong>結構：</strong><code>${p.structure}</code></p>
         <p style="margin: 2px 0;"><strong>解析：</strong>${p.explanation}</p>
-        <p style="margin: 2px 0; color: #555;"><strong>例句：</strong>${p.sentence_en} (${p.sentence_tw})</p>
+        <p style="margin: 2px 0; color: #555;"><strong>例句：</strong>${p.sentence_en || ''} (${p.sentence_tw || ''})</p>
       </div>
     `).join('');
   }
 
-  // 可隨時被中斷的延遲等待函式 (使用你原本有效的機制)
+  // 可隨時被中斷的延遲等待函式
   function delay(ms) {
     return new Promise((resolve, reject) => {
       const timer = setTimeout(resolve, ms);
@@ -314,10 +343,10 @@
     });
   }
 
-  // 文字朗讀 (使用你原本有效的穩定結構)
+  // 文字朗讀
   function speakText(text, lang = 'en-US', speed = 0.9) {
     return new Promise((resolve, reject) => {
-      if (!isPlaying || isPaused) return reject(new Error('Interrupted'));
+      if (!isPlaying || isPaused || !text) return resolve();
 
       synth.cancel();
 
@@ -333,22 +362,24 @@
 
       utterance.onerror = (e) => {
         currentUtterance = null;
-        reject(new Error('Speech error'));
+        resolve();
       };
 
       synth.speak(utterance);
     });
   }
 
-  // 完整朗讀一個單字的流程 (單字 ➔ 中文 ➔ 例句 ➔ 深入解析 ➔ 留空 2.5 秒跟讀)
+  // 完整朗讀一個項目 (單字/片語 ➔ 中文 ➔ 例句 ➔ 解析 ➔ 留空 3.5 秒)
   async function speakVocabItem(item) {
-    // 1. 唸英文單字
-    await speakText(item.word, 'en-US', 0.85);
+    // 1. 唸英文單字 / 片語
+    await speakText(item.displayWord, 'en-US', 0.85);
     await delay(500);
 
-    // 2. 唸中文單字定義
-    await speakText(item.definition_tw, 'zh-TW', 0.9);
-    await delay(500);
+    // 2. 唸中文定義
+    if (item.definition_tw) {
+      await speakText(item.definition_tw, 'zh-TW', 0.9);
+      await delay(500);
+    }
 
     // 3. 唸英文例句
     if (item.sentence_en) {
@@ -356,16 +387,20 @@
       await delay(500);
     }
 
-    // 4. 唸中文深入解析與使用時機
-    if (item.analysis) {
-      await speakText("解析：" + item.analysis + "。使用時機：" + item.timing, 'zh-TW', 0.95);
+    // 4. 唸中文解析與使用時機
+    let textToSpeak = "";
+    if (item.analysis) textToSpeak += "解析：" + item.analysis + "。";
+    if (item.timing) textToSpeak += "使用時機：" + item.timing;
+
+    if (textToSpeak) {
+      await speakText(textToSpeak, 'zh-TW', 0.95);
     }
 
     // 5. 留空 3.5 秒供跟讀與思考
-    await delay(2500);
+    await delay(3500);
   }
 
-  // 核心功能：從指定單字開始繼續/輪播
+  // 核心功能：從指定位置開始繼續/輪播
   async function playFromIndex(index) {
     unlockAudio();
     synth.cancel();
@@ -381,7 +416,7 @@
     while (currentIndex < currentWords.length && isPlaying && !isPaused) {
       highlightRow(currentIndex);
       const item = currentWords[currentIndex];
-      document.getElementById('nowPlayingText').innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${item.word}`;
+      document.getElementById('nowPlayingText').innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${item.displayWord}`;
 
       try {
         await speakVocabItem(item);
@@ -465,12 +500,12 @@
       pauseBtn.innerText = '▶ 繼續';
       pauseBtn.style.display = 'inline-block';
       playBtn.style.display = 'none';
-      statusText.innerText = `狀態：已暫停 (${currentWords[currentIndex]?.word || ''})`;
+      statusText.innerText = `狀態：已暫停 (${currentWords[currentIndex]?.displayWord || ''})`;
     } else {
       pauseBtn.innerText = '⏸ 暫停';
       pauseBtn.style.display = 'inline-block';
       playBtn.style.display = 'none';
-      statusText.innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${currentWords[currentIndex]?.word || ''}`;
+      statusText.innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${currentWords[currentIndex]?.displayWord || ''}`;
     }
   }
 
