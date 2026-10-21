@@ -1,0 +1,419 @@
+{
+  "lesson_id": "B1L7",
+  "lesson_title": "Senior High English Lesson 7",
+  "words": [
+    {
+      "id": "w1",
+      "word": "slope",
+      "pos": "n. [C]",
+      "kk": "[slop]",
+      "definition_en": "a surface of which one end or side is at a higher level than another; a rising or falling surface.",
+      "definition_tw": "斜坡；坡地",
+      "sentence_en": "They skied down the steep mountain slope safely.",
+      "sentence_tw": "他們安全地滑下了陡峭的山坡。",
+      "analysis": "指傾斜的地面或山坡，常見如 ski slope（滑雪坡）。",
+      "timing": "描繪山嶽地形、滑雪運動或坡地景觀時。"
+    },
+    {
+      "id": "w2",
+      "word": "tumble",
+      "pos": "vi.",
+      "kk": "[ˈtʌmbl]",
+      "definition_en": "fall suddenly, clumsily, or headlong.",
+      "definition_tw": "滾落；跌落",
+      "sentence_en": "The rocks tumbled down the hill after the earthquake.",
+      "sentence_tw": "地震後岩石從山上滾落了下來。",
+      "analysis": "指笨拙、突然或頭重腳輕地翻滾跌落，也可比喻物價或氣溫暴跌。",
+      "timing": "描述跌倒摔落、山崩石滾或數據暴跌時。"
+    },
+    {
+      "id": "w3",
+      "word": "bruised",
+      "pos": "adj.",
+      "kk": "[bruzd]",
+      "definition_en": "having bluish, purplish, or blackish marks on the skin from an injury.",
+      "definition_tw": "受傷的；碰傷的",
+      "related_words": [
+        "bruise (n. [C] / vt.) 瘀傷；使受傷"
+      ],
+      "sentence_en": "His legs were bruised after falling off the bicycle.",
+      "sentence_tw": "他從自行車上摔下來後雙腿撞傷瘀青了。",
+      "analysis": "形容皮膚撞擊後瘀青受傷，或水果碰傷，也可比喻心靈受創 (bruised pride)。",
+      "timing": "描述運動傷害、跌倒瘀青或自尊心受創時。"
+    },
+    {
+      "id": "w4",
+      "word": "superior",
+      "pos": "adj. / n. [C]",
+      "kk": "[səˈpɪriɚ]",
+      "definition_en": "higher in rank, status, or quality; a person higher in rank.",
+      "definition_tw": "優於……的；上司",
+      "collocations": [
+        "be superior to...（優於……/比……高級）"
+      ],
+      "sentence_en": "This new model is far superior to the older version.",
+      "sentence_tw": "這款新機型遠遠優於舊版本。",
+      "analysis": "介系詞搭配 to（be superior to），表示品質或地位較佳，名詞指職場上司。",
+      "timing": "比較產品品質、評估能力優劣或提及公司長官時。"
+    },
+    {
+      "id": "w5",
+      "word": "intimately",
+      "pos": "adv.",
+      "kk": "[ˈɪntəmɪtli]",
+      "definition_en": "in a detailed, close, or familiar way.",
+      "definition_tw": "了如指掌地；密切地",
+      "related_words": [
+        "intimate (adj.) 親密的；私密的"
+      ],
+      "sentence_en": "As a local guide, she knows the area intimately.",
+      "sentence_tw": "作為在地導遊，她對這個區域瞭如指掌。",
+      "analysis": "副詞，指對事物理解透徹非常熟悉，或指人際關係極為親密。",
+      "timing": "描述對地方熟門熟路、專業了解透徹或關係密切時。"
+    },
+    {
+      "id": "w6",
+      "word": "skillfully",
+      "pos": "adv.",
+      "kk": "[ˈskɪlfəli]",
+      "definition_en": "with skill, expertise, or proficiency.",
+      "definition_tw": "熟練地",
+      "related_words": [
+        "skillful (adj.) 熟練的；巧妙的"
+      ],
+      "sentence_en": "The driver skillfully navigated the crowded streets.",
+      "sentence_tw": "司機熟練地在擁擠的街道中穿越穿梭。",
+      "analysis": "形容技術純熟、動作巧妙敏捷地處理事情。",
+      "timing": "讚賞工藝技術、駕駛技巧、演奏或處理問題時。"
+    },
+    {
+      "id": "w7",
+      "word": "crop",
+      "pos": "n. [C]",
+      "kk": "[krɑp]",
+      "definition_en": "a cultivated plant that is grown as food, especially a grain, fruit, or vegetable.",
+      "definition_tw": "作物；莊稼",
+      "sentence_en": "Rice is the main agricultural crop in this region.",
+      "sentence_tw": "稻米是這個地區主要的農業作物。",
+      "analysis": "指田地裡大量栽種的農作物，如農作物收成 (crop yield)。",
+      "timing": "討論農業收成、氣候影響農作或飲食來源時。"
+    },
+    {
+      "id": "w8",
+      "word": "path",
+      "pos": "n. [C]",
+      "kk": "[pæθ]",
+      "definition_en": "a way or track laid down for walking or made by continual treading.",
+      "definition_tw": "小路；小徑；途徑",
+      "sentence_en": "We followed a narrow path through the peaceful forest.",
+      "sentence_tw": "我們沿著一條穿過寧靜森林的狹窄小徑前進。",
+      "analysis": "實體指林間或鄉間的小徑，抽象可比喻人生或職涯途徑 (career path)。",
+      "timing": "描繪森林登山步道、小徑，或討論人生職涯規劃時。"
+    },
+    {
+      "id": "w9",
+      "word": "navigate",
+      "pos": "vi. / vt.",
+      "kk": "[ˈnævəˌɡet]",
+      "definition_en": "plan and direct the route or course of a ship, aircraft, or other form of transport.",
+      "definition_tw": "(人)行走確認方向；航行導航",
+      "related_words": [
+        "navigation (n. [U]) 導航",
+        "navigator (n. [C]) 領航員"
+      ],
+      "sentence_en": "It is hard to navigate through the dense jungle without a map.",
+      "sentence_tw": "沒有地圖要在密林中穿行確認方向是非常困難的。",
+      "analysis": "指實體的航行導航，或在複雜環境中穿行辨認方向，也可比喻解決複雜問題。",
+      "timing": "描述使用地圖 GPS 導航、穿越複雜地形或應對難關時。"
+    },
+    {
+      "id": "w10",
+      "word": "outsider",
+      "pos": "n. [C]",
+      "kk": "[ˈaʊtˈsaɪdɚ]",
+      "definition_en": "a person who does not belong to a particular group, set, or society.",
+      "definition_tw": "外人；外來者",
+      "sentence_en": "As an outsider, he found it difficult to understand local customs.",
+      "sentence_tw": "作為一個外來者，他發現很難理解當地的風俗習慣。",
+      "analysis": "指不屬於特定圈子、社區、團體或組織的外部人員。",
+      "timing": "討論融入新環境、文化差異或非圈內人視角時。"
+    },
+    {
+      "id": "w11",
+      "word": "adapt",
+      "pos": "vi. / vt.",
+      "kk": "[əˈdæpt]",
+      "definition_en": "make (something) suitable for a new use or purpose; modify; become adjusted.",
+      "definition_tw": "適應；改編",
+      "collocations": [
+        "adapt to + N/V-ing（適應……）"
+      ],
+      "related_words": [
+        "adaptation (n. [C, U]) 適應；改編"
+      ],
+      "sentence_en": "It took him some time to adapt to the new school environment.",
+      "sentence_tw": "他花了些時間才適應新學校的環境。",
+      "analysis": "不及物動詞搭配 adapt to 指適應新環境；及物動詞指將小說改編為電影。",
+      "timing": "描繪適應新環境文化、生物進化適應或影視小說改編時。"
+    },
+    {
+      "id": "w12",
+      "word": "cling",
+      "pos": "vt. / vi.",
+      "kk": "[klɪŋ]",
+      "definition_en": "hold on tightly to something; remain persistently devoted.",
+      "definition_tw": "緊抓；緊握",
+      "collocations": [
+        "cling to + N（緊抓……/堅持……）"
+      ],
+      "sentence_en": "The frightened child clung tightly to his mother's arm.",
+      "sentence_tw": "受驚嚇的孩子緊緊抓著媽媽的手臂。",
+      "analysis": "動詞三態為 cling, clung, clung。常與 to 搭配，表緊抱附著或堅持信念。",
+      "timing": "描述肢體緊抱依靠、衣服貼身或堅持傳統信念時。"
+    },
+    {
+      "id": "w13",
+      "word": "twinkle",
+      "pos": "vi. / n. [C]",
+      "kk": "[ˈtwɪŋkl]",
+      "definition_en": "shine with a gleam that changes constantly from bright to faint.",
+      "definition_tw": "閃耀；閃爍",
+      "sentence_en": "The distant stars twinkled brightly in the dark night sky.",
+      "sentence_tw": "遙遠的星星在黑暗的夜空中璀璨閃爍。",
+      "analysis": "指光線忽明忽暗微弱地閃爍（如星星或燈火），也可指眼神閃爍著喜悅光芒。",
+      "timing": "描述夜空星光、遠方燈火或眼神中流露出的喜悅光芒時。"
+    },
+    {
+      "id": "w14",
+      "word": "pity",
+      "pos": "vt. / n. [U, sing.]",
+      "kk": "[ˈpɪti]",
+      "definition_en": "the feeling of sorrow and compassion caused by the suffering and misfortunes of others.",
+      "definition_tw": "憐憫；同情",
+      "collocations": [
+        "take pity on sb.（同情/憐憫某人）",
+        "What a pity!（真可惜！）"
+      ],
+      "sentence_en": "I felt great pity for the homeless people out in the cold.",
+      "sentence_tw": "我對在寒風中的無家可歸者感到無比同情。",
+      "analysis": "作名詞表同情心或可惜的事，常用 What a pity!（真可惜）；作動詞表同情。",
+      "timing": "表達同情哀憐、對不幸感到不捨或發出可惜感嘆時。"
+    },
+    {
+      "id": "w15",
+      "word": "awe",
+      "pos": "n. [U] / vt.",
+      "kk": "[ɔ]",
+      "definition_en": "a feeling of reverential respect mixed with fear or wonder.",
+      "definition_tw": "敬畏",
+      "collocations": [
+        "in awe of...（對……感到敬畏）"
+      ],
+      "related_words": [
+        "awesome (adj.) 令人敬畏的；極棒的"
+      ],
+      "sentence_en": "The majestic waterfall filled all the tourists with awe.",
+      "sentence_tw": "雄偉的瀑布讓所有遊客心中充滿了敬畏感。",
+      "analysis": "不可數名詞，指面對偉大自然或奇景時，油然而生的崇敬與驚嘆感。",
+      "timing": "描繪面對壯麗大自然、宏偉神蹟或偉大人物時的崇高感受。"
+    },
+    {
+      "id": "w16",
+      "word": "smoothness",
+      "pos": "n. [U]",
+      "kk": "[ˈsmuðnɪs]",
+      "definition_en": "the quality of being smooth, without obstacles, lumps, or roughness.",
+      "definition_tw": "平滑；細緻",
+      "related_words": [
+        "smooth (adj.) 平滑的；順暢的"
+      ],
+      "sentence_en": "She marvelled at the smoothness of the silk fabric.",
+      "sentence_tw": "她對絲綢布料的細緻平滑讚坦不已。",
+      "analysis": "形容詞 smooth 的名詞形，指質地細緻平滑或過程無阻滑順。",
+      "timing": "描述布料膚質細緻、運作順暢無阻時。"
+    },
+    {
+      "id": "w17",
+      "word": "opposition",
+      "pos": "n. [U, C]",
+      "kk": "[ˌɑpəˈzɪʃən]",
+      "definition_en": "resistance or dissent, expressed in action or argument.",
+      "definition_tw": "反對",
+      "related_words": [
+        "oppose (vt.) 反對",
+        "opposite (adj.) 對面的；相反的"
+      ],
+      "sentence_en": "The new policy met with strong opposition from the public.",
+      "sentence_tw": "這項新政策遭到了來自大眾的強烈反對。",
+      "analysis": "指對立場、計畫或政策的反對立場或阻力，政治上可指反對黨。",
+      "timing": "討論政策爭議、意見分歧或面臨各方阻力反對時。"
+    },
+    {
+      "id": "w18",
+      "word": "peculiar",
+      "pos": "adj.",
+      "kk": "[pɪˈkjuljɚ]",
+      "definition_en": "strange or odd; unusual and specific to a particular person or place.",
+      "definition_tw": "奇怪的；不尋常的",
+      "collocations": [
+        "be peculiar to...（為……所特有的）"
+      ],
+      "sentence_en": "There was a peculiar smell coming from the kitchen.",
+      "sentence_tw": "廚房裡傳出一股奇怪不尋常的氣味。",
+      "analysis": "指奇特古怪，搭配 to 時（peculiar to）表示某地方或物種特有的。",
+      "timing": "描述怪異舉止、奇特氣味，或說明某地域特有風俗時。"
+    },
+    {
+      "id": "w19",
+      "word": "confront",
+      "pos": "vt.",
+      "kk": "[kənˈfrʌnt]",
+      "definition_en": "meet (someone) face to face with hostile or argumentative intent; face up to and deal with.",
+      "definition_tw": "面臨；面對",
+      "related_words": [
+        "confrontation (n. [C, U]) 對抗；對峙"
+      ],
+      "sentence_en": "We must be brave enough to confront our fears.",
+      "sentence_tw": "我們必須夠勇敢去正面面對我們的恐懼。",
+      "analysis": "及物動詞，指勇敢正視並處理困難、問題，或與敵人正面對峙。",
+      "timing": "描述直面恐懼難題、挑戰或質疑對峙時。"
+    },
+    {
+      "id": "w20",
+      "word": "dilemma",
+      "pos": "n. [C]",
+      "kk": "[dɪˈlɛmə]",
+      "definition_en": "a situation in which a difficult choice has to be made between two or more alternatives.",
+      "definition_tw": "進退兩難的困境",
+      "collocations": ["in a dilemma（處於兩難困境中）"],
+      "sentence_en": "He faced a moral dilemma over whether to report his friend's mistake.",
+      "sentence_tw": "在是否要舉報朋友的錯誤這件事上，他面臨著道德上的兩難困境。",
+      "analysis": "指兩個選項都各有缺點或代價、令人左右為難選擇困難的窘境。",
+      "timing": "討論道德抉擇、左右為難的難題或決策困境時。"
+    },
+    {
+      "id": "w21",
+      "word": "nevertheless",
+      "pos": "adv.",
+      "kk": "[ˌnɛvɚðəˈlɛs]",
+      "definition_en": "in spite of that; notwithstanding; all the same.",
+      "definition_tw": "儘管如此；然而",
+      "sentence_en": "The task was difficult; nevertheless, they managed to complete it on time.",
+      "sentence_tw": "任務很困難；然而，他們還是設法按時完成了。",
+      "analysis": "轉折連接副詞，語氣比 however 更為正式強烈，常用於句首或半號後。",
+      "timing": "作文撰寫高級轉折語氣、克服逆境成功時。"
+    },
+    {
+      "id": "w22",
+      "word": "gaze",
+      "pos": "vi. / n. [sing.]",
+      "kk": "[ɡez]",
+      "definition_en": "look steadily and intently, especially in admiration, surprise, or thought.",
+      "definition_tw": "凝視；注視",
+      "collocations": ["gaze at...（凝視/注視……）"],
+      "sentence_en": "She stood by the window and gazed at the stars in deep thought.",
+      "sentence_tw": "她站在窗邊，陷入深思地凝視著星空。",
+      "analysis": "指帶有深情、讚嘆、驚奇或陷入沉思地長時間目不轉睛深情注視。",
+      "timing": "描述深情對視、沉思遠眺或含情脈脈注視景物時。"
+    },
+    {
+      "id": "w23",
+      "word": "envision",
+      "pos": "vt.",
+      "kk": "[ɛnˈvɪʒən]",
+      "definition_en": "imagine as a future possibility; visualize.",
+      "definition_tw": "想像；預想",
+      "sentence_en": "The architect envisioned a modern green building with rooftop gardens.",
+      "sentence_tw": "建築師構想並預想了一座帶有屋頂花園的現代綠建築。",
+      "analysis": "及物動詞，指在心中對於未來的藍圖、願景或前景進行想像勾勒。",
+      "timing": "描繪未來的展望、規劃願景藍圖或設計構想時。"
+    },
+    {
+      "id": "w24",
+      "word": "flee",
+      "pos": "vt. / vi.",
+      "kk": "[fli]",
+      "definition_en": "run away from a place or situation of danger.",
+      "definition_tw": "逃離；逃跑",
+      "sentence_en": "Thousands of refugees were forced to flee their homeland because of war.",
+      "sentence_tw": "數以千計的難民因戰爭被迫逃離家園。",
+      "analysis": "動詞三態為 flee, fled, fled。指為了避開危險、戰爭或災害而迅速逃離。",
+      "timing": "描述避難逃跑、逃離戰火災害或倉皇逃竄時。"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "p1",
+      "phrase": "set off",
+      "definition_tw": "出發；啟程",
+      "sentence_en": "They set off on their trip to Japan early in the morning.",
+      "sentence_tw": "他們大清早就啟程出發前往日本旅行。",
+      "analysis": "指展開旅程出發，也可指引爆炸彈或觸發警報。"
+    },
+    {
+      "id": "p2",
+      "phrase": "come upon",
+      "definition_tw": "偶然遇到；偶然發現",
+      "sentence_en": "While walking in the forest, we came upon a hidden waterfall.",
+      "sentence_tw": "在森林裡散步時，我們偶然發現了一座隱蔽的瀑布。",
+      "analysis": "相當於 run into 或 come across，指出乎意料地遇見或發現。"
+    },
+    {
+      "id": "p3",
+      "phrase": "care for",
+      "definition_tw": "照顧；照料",
+      "sentence_en": "She stayed home to care for her sick grandmother.",
+      "sentence_tw": "她留在家裡照顧生病的奶奶。",
+      "analysis": "相當於 take care of，指細心照顧照料，在否定/疑問句中也可表喜愛。"
+    },
+    {
+      "id": "p4",
+      "phrase": "cling to",
+      "definition_tw": "堅持；堅信",
+      "sentence_en": "Despite many failures, he still clung to his dream of becoming an artist.",
+      "sentence_tw": "儘管面臨許多失敗，他仍然堅守著成為藝術家的夢想。",
+      "analysis": "除了指肢體緊抱之外，常比喻死守傳統、堅守希望或信念不放。"
+    },
+    {
+      "id": "p5",
+      "phrase": "lay eyes on",
+      "definition_tw": "看見；注意到",
+      "sentence_en": "From the moment he laid eyes on her, he knew she was special.",
+      "sentence_tw": "從他第一眼看見她的那一刻起，他就知道她是特別的。",
+      "analysis": "生動的片語，指第一次看見、親眼注意到某人或某物。"
+    },
+    {
+      "id": "p6",
+      "phrase": "worst of all",
+      "definition_tw": "最糟的是",
+      "sentence_en": "It rained all day, and worst of all, I lost my wallet.",
+      "sentence_tw": "下了一整天的雨，最糟的是，我還丟了皮夾。",
+      "analysis": "用於列舉多項壞事時，引出其中最嚴重糟糕的一項。"
+    },
+    {
+      "id": "p7",
+      "phrase": "in return (for)",
+      "definition_tw": "作為（對……的）回報、交換",
+      "sentence_en": "He helped me with math, and in return, I bought him lunch.",
+      "sentence_tw": "他教我數學，作為回報，我請他吃午餐。",
+      "analysis": "表達互惠回報、回饋或作為某項幫忙的代價交換。"
+    },
+    {
+      "id": "p8",
+      "phrase": "for sb.'s sake / for the sake of sb.",
+      "definition_tw": "為了某人（或看在某人份上）",
+      "sentence_en": "Please stop arguing for the sake of the children.",
+      "sentence_tw": "看在孩子的份上，請別再爭吵了。",
+      "analysis": "指考量某人的福祉、利益或看在某人的情面上而做出某事。"
+    },
+    {
+      "id": "p9",
+      "phrase": "for sth.'s sake / for the sake of sth.",
+      "definition_tw": "為了某事物（或因某事物的緣故）",
+      "sentence_en": "He moved to the countryside for the sake of his health.",
+      "sentence_tw": "為了健康的緣故，他搬到了鄉下居住。",
+      "analysis": "指為了達成某種目的、維護某事物的價值（如安全、健康、和平）。"
+    }
+  ],
+  "patterns": []
+}
