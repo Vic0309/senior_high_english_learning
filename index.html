@@ -162,7 +162,8 @@
       <option value="data/senior_high_2_up_lesson5.json">高二上第五課</option>
       <option value="data/senior_high_2_up_lesson6.json">高二上第六課</option>
       <option value="data/studio_classroom_2026_09.json">空中英文2026年9月</option>
-      <!-- 未來新增課文直接加在這裡 -->
+      
+      <!-- 未來新增英文書直接加在這裡 -->
     </select>
   </div>
 
@@ -207,6 +208,7 @@
   let currentIndex = 0;
   let currentUtterance = null;
   let wakeLock = null;
+  let playSessionId = 0; // 新增：用於控制播放行程的獨佔 ID，防止多重迴圈衝突
   const synth = window.speechSynthesis;
 
   // iOS 語音解鎖機制
@@ -250,7 +252,6 @@
       if (!res.ok) throw new Error(`無法讀取檔案 ${filePath} (HTTP ${res.status})`);
       const data = await res.json();
       
-      // 【關鍵修復】將 words 與 phrases 整合到同一個播放清單中
       const rawWords = (data.words || []).map(item => ({
         ...item,
         displayWord: item.word,
@@ -271,7 +272,6 @@
         type: 'phrase'
       }));
 
-      // 合併單字與片語
       currentWords = [...rawWords, ...rawPhrases];
 
       renderTable();
@@ -332,12 +332,15 @@
     `).join('');
   }
 
-  // 可隨時被中斷的延遲等待函式
-  function delay(ms) {
+  // 可隨時被中斷的延遲等待函式（加入 sessionId 檢查）
+  function delay(ms, sessionId) {
     return new Promise((resolve, reject) => {
-      const timer = setTimeout(resolve, ms);
+      const timer = setTimeout(() => {
+        if (playSessionId !== sessionId) return reject(new Error('Interrupted'));
+        resolve();
+      }, ms);
       const checkInterval = setInterval(() => {
-        if (!isPlaying || isPaused) {
+        if (!isPlaying || isPaused || playSessionId !== sessionId) {
           clearTimeout(timer);
           clearInterval(checkInterval);
           reject(new Error('Interrupted'));
@@ -346,10 +349,10 @@
     });
   }
 
-  // 文字朗讀
-  function speakText(text, lang = 'en-US', speed = 0.9) {
+  // 文字朗讀（加入 sessionId 檢查）
+  function speakText(text, lang = 'en-US', speed = 0.9, sessionId) {
     return new Promise((resolve, reject) => {
-      if (!isPlaying || isPaused || !text) return resolve();
+      if (!isPlaying || isPaused || !text || playSessionId !== sessionId) return resolve();
 
       synth.cancel();
 
@@ -372,57 +375,90 @@
     });
   }
 
-  // 完整朗讀一個項目 (單字/片語 ➔ 中文 ➔ 例句 ➔ 解析 ➔ 留空 3.5 秒)
-  async function speakVocabItem(item) {
+  // 完整朗讀一個項目 (加入英文定義與中文例句)
+  async function speakVocabItem(item, sessionId) {
+    if (playSessionId !== sessionId) return;
+    
     // 1. 唸英文單字 / 片語
-    await speakText(item.displayWord, 'en-US', 0.85);
-    await delay(500);
+    await speakText(item.displayWord, 'en-US', 0.85, sessionId);
+    if (playSessionId !== sessionId) return;
+    await delay(500, sessionId);
 
-    // 2. 唸中文定義
+    // 2. 唸中文定義 (definition_tw)
     if (item.definition_tw) {
-      await speakText(item.definition_tw, 'zh-TW', 0.9);
-      await delay(500);
+      if (playSessionId !== sessionId) return;
+      await speakText(item.definition_tw, 'zh-TW', 0.9, sessionId);
+      if (playSessionId !== sessionId) return;
+      await delay(500, sessionId);
+    }
+    
+    // 3. 唸英文定義 (definition_en)
+    if (item.definition_en) {
+      if (playSessionId !== sessionId) return;
+      await speakText(item.definition_en, 'en-US', 0.9, sessionId);
+      if (playSessionId !== sessionId) return;
+      await delay(500, sessionId);
     }
 
-    // 3. 唸英文例句
+    
+
+    // 4. 唸英文例句 (sentence_en)
     if (item.sentence_en) {
-      await speakText(item.sentence_en, 'en-US', 0.9);
-      await delay(500);
+      if (playSessionId !== sessionId) return;
+      await speakText(item.sentence_en, 'en-US', 0.9, sessionId);
+      if (playSessionId !== sessionId) return;
+      await delay(500, sessionId);
     }
 
-    // 4. 唸中文解析與使用時機
+    // 5. 唸中文例句 (sentence_tw) - 新增
+    if (item.sentence_tw) {
+      if (playSessionId !== sessionId) return;
+      await speakText(item.sentence_tw, 'zh-TW', 0.9, sessionId);
+      if (playSessionId !== sessionId) return;
+      await delay(500, sessionId);
+    }
+
+    // 6. 唸中文解析與使用時機
     let textToSpeak = "";
     if (item.analysis) textToSpeak += "解析：" + item.analysis + "。";
     if (item.timing) textToSpeak += "使用時機：" + item.timing;
 
     if (textToSpeak) {
-      await speakText(textToSpeak, 'zh-TW', 0.95);
+      if (playSessionId !== sessionId) return;
+      await speakText(textToSpeak, 'zh-TW', 0.95, sessionId);
     }
 
-    // 5. 留空 3.5 秒供跟讀與思考
-    await delay(3500);
+    // 7. 留空 3.5 秒供跟讀與思考
+    if (playSessionId !== sessionId) return;
+    await delay(2000, sessionId);
   }
 
-  // 核心功能：從指定位置開始繼續/輪播
+  // 核心功能：從指定位置開始播放
   async function playFromIndex(index) {
     unlockAudio();
     synth.cancel();
-    isPlaying = false;
-    isPaused = false;
 
-    currentIndex = index;
+    // 產生新的工作階段 ID，使任何舊的播放迴圈立刻失效
+    const sessionId = ++playSessionId;
+
     isPlaying = true;
+    isPaused = false;
+    currentIndex = index;
     
     requestWakeLock();
     updateUI();
 
-    while (currentIndex < currentWords.length && isPlaying && !isPaused) {
+    while (currentIndex < currentWords.length && isPlaying && !isPaused && playSessionId === sessionId) {
       highlightRow(currentIndex);
       const item = currentWords[currentIndex];
       document.getElementById('nowPlayingText').innerText = `正在播放 (${currentIndex + 1}/${currentWords.length}): ${item.displayWord}`;
 
       try {
-        await speakVocabItem(item);
+        await speakVocabItem(item, sessionId);
+        
+        // 若在此期間被其他操作中斷，則跳出迴圈
+        if (playSessionId !== sessionId) break;
+
         if (isPlaying && !isPaused) {
           currentIndex++;
         }
@@ -431,7 +467,7 @@
       }
     }
 
-    if (currentIndex >= currentWords.length) {
+    if (playSessionId === sessionId && currentIndex >= currentWords.length) {
       stopAutoPlay();
     }
   }
@@ -467,6 +503,7 @@
 
   // 停止播放
   function stopAutoPlay() {
+    playSessionId++; // 使進行中的非同步等待與語音全部失效
     isPlaying = false;
     isPaused = false;
     currentIndex = 0;
